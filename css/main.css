@@ -1,0 +1,9 @@
+/* main.css */
+/* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
+#wrap { width: 100%; height: 100%; background-color: #222; }
+
+#wrap { width: 100%; height: 100%; background-color: #ccc; }
+
+#wrap h1 { color: #fff; }
+
+#wrap { width: 100%; height: 100%; background-color: #ccc; }
