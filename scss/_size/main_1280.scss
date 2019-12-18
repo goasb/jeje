@@ -1,13 +1,13 @@
-#wrap {width: 100%; height: auto; background-color:#ccc;}   
-#headBox {width: 100px; height: auto;
-.gnb {position:relative; width: 100%; height: 50px; background-color: #2ad;
- .menu {position:absolute; left:30px; top:0; bottom:0; margin:auto; width: 50px; height: 50px; background-color: #ccc;}
- .logo {position:absolute; @include margin; width: 50px; height: 50px; background-color: #1fa;}
- .contect {position:absolute; right:30px; top:0; bottom:0; margin:auto; width: 100px; height: 50px; background-color: #fca;}
- } // .gnb
-} // #headBox
+// #wrap {width: 100%; height: auto; background-color:#ccc;}   
+// #headBox {width: 100px; height: auto;
+// .gnb {position:relative; width: 100%; height: 50px; background-color: #2ad;
+//  .menu {position:absolute; left:30px; top:0; bottom:0; margin:auto; width: 50px; height: 50px; background-color: #ccc;}
+//  .logo {position:absolute; @include margin; width: 50px; height: 50px; background-color: #1fa;}
+//  .contect {position:absolute; right:30px; top:0; bottom:0; margin:auto; width: 100px; height: 50px; background-color: #fca;}
+//  } // .gnb
+// } // #headBox
 
-#banner {width: 100%; height:525px; background-color: #ca2;
- .side_left {float:left;width: 150px; height:100%; background-color: #faf;}
- .side_right {float:right; width: 150px; height: 100%; background-color: #faf;}
-} // #banner
+// #banner {width: 100%; height:525px; background-color: #ca2;
+//  .side_left {float:left;width: 150px; height:100%; background-color: #faf;}
+//  .side_right {float:right; width: 150px; height: 100%; background-color: #faf;}
+// } // #banner

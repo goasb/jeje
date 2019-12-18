@@ -1,3 +1,57 @@
-#wrap {width: 100%; height: 100%; background-color:#fff;}
-h1 {color:#222;}
-#headBox {width: 100%; height: 200px; background-color: #faf;}
+#wrap {width: 100%; height: 100%; background-color:#999;}
+#headBox {position:fixed; width:100%; height:70px; background-color:rgba(255,255,255,0.1);
+h1 {width: 70px; height: 70px; margin:auto; @include url; background-size:60%; background-image: url("../img/tesla.png");
+a {display: block; width: 100%; height: 100%;}}
+
+.menu {position:absolute; top:0; left:5%; width:70px; height: 70px; @include url;
+       background-size: 50%;
+       background-image: url("../img/menu.png");
+    a{display: block; width: 100%; height: 100%;}
+} // .menu
+.search_area {position:absolute; top:0; bottom:0; right:5%; margin:auto; width: 230px; height: 30px; 
+ .search {position: absolute; @include margin; width:100%; height: 100%; border:1px solid #fff;  
+  #searchBar {float:left; width: 200px; height:30px; border:none; background-color:rgba(255,255,255,0.2); 
+    &::placeholder {color:$white;}
+    } // #searchBar
+  .search_icon {float:right; width:30px; height: 30px; background-color:transparent; color:#fff;}
+  } // .search 
+ } // .search_area
+} // #headBox
+
+#banner {width: 100%; height: 936px; background-color: #555;
+ .banner_left {position: absolute; top:0; bottom:0; margin:auto; width: 120px; height:200px; 
+  .nameBox {position:relative; width:100%; height: 100px; 
+    .name {position:absolute; bottom:45%; right:0; transform: rotate(-90deg); text-align: center; font-size:1.2rem; 
+        width: 70px; height:30px; font-weight:bold; color:#fff; letter-spacing:10px;}
+} // .name
+  .numberBox {width: 100%; height: 40px; 
+    &:before {content:" "; display: block; width: 100px; height: 1px; background-color:$primary;}
+    .number {position:absolute; bottom:0; top:30%; right:0; margin:auto; width: 70px; height: 20px; text-align: center; font-weight:bold; color:#fff;}
+    } // .numberBox
+ } // .banner_left
+ .banner_right {position: absolute; top:0; bottom:0; right:3%; margin:auto; width: 140px; height:200px; 
+    ul{width:100%; height:100%;
+        li{width:100%; height:20%;
+    .Rn {float:left; width:10%; height: 40px; font-weight:bold; line-height:40px; color:#fff;}
+  .line {position:relative; top:50%; float:right; width:90px; height: 1px; background-color:$primary; }
+    &:nth-child(2) {.line {width:50px; height:1px; background-color: #fff;} }
+    &:nth-child(3) {.line {width:50px; height:1px; background-color: #fff;} }
+    &:nth-child(4) {.line {width:50px; height:1px; background-color: #fff;} }
+    &:nth-child(5) {.line {width:50px; height:1px; background-color: #fff;} }
+    } // li
+  } // ul
+ } // .banner_right
+
+@keyframes mousewheel {
+    0% {height:0; top:0;}
+    100% {height:50px; top:50%;}
+} // @keyframs
+.scroll {position: absolute; bottom:4%; left:0; right:0; margin:auto; width: 50px; height: 100px; 
+ .mouse {position: absolute; bottom:4%; left:0; right:55%; margin:auto; width: 10px; height: 100px;
+  .wheel {position: absolute; width: 1px; height: 50px; right:0; left:0; margin:auto; transform:translateX(-50%);
+          text-indent:-2000px; background-color:#fff; animation:mousewheel 1s linear infinite;
+  } // .wheel
+ } // .mouse
+ p {position: absolute; bottom:60%; right:0; font-size:0.8rem; color:#fff; transform: rotate(-90deg);}
+ } // .scroll
+}// #banner

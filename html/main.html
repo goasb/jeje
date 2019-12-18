@@ -30,18 +30,63 @@
  <!-- noscript ================================================== -->
    <div id="wrap">
       <h1 class="hidden">테슬라 홈페이지</h1>
-      <haeder id="headBox">
-       <ul class="gnb">
-        <li class="menu"><a href="#headBox">메뉴</a></li>
-        <li class="logo"><a href="#headBox">로고</a></li>
-        <li class="contect"><a href="#headBox">컨텍트</a></li>
-       </ul>
-    </haeder>
+      <header id="headBox">
+         <h1><a href="main.html"><span class="hidden">tesla_logo</span></a></h1>
+           <div class="menu"><a href="#"></a></div>
+
+           <div class="search_area">
+            <div class="search">
+              <form action="#" method="get" class="site">
+                <fieldset>
+                 <legend class="hidden">테슬라 검색창</legend>
+                 <label for="searchBar" class="hidden">검색창</label>
+                  <input type="search" id="searchBar" name="searchBar"
+                   value="" placeholder="검색어를 입력하세요."/>
+                <button type="submit" class="search_icon">
+                 <i class="fas fa-search"></i>
+                </button>
+                </fieldset>
+               </form>
+           </div>
+         </div>
+      </header>
     
 
     <section id="banner">
-      <div class="side_left"></div>
-      <div class="side_right"></div>
+       <div class="banner_video">
+          <video muted autoplay poster="../"></video>
+       </div>
+      <div class="banner_left">
+         <ul>
+            <li class="nameBox"><span class="name">TESLA</span></li>
+            <li class="numberBox"><span class="number">01</span></li>
+         </ul>
+      </div>
+      <!--     <div class="fix_img">
+            <video muted autoplay poster="../img/stop_img.png" controls loop>
+               <source src="../media/videoplayback.ogg" type="video/ogg">
+               <source src="../media/videoplayback.webm" type="video/webm">
+               <source src="../media/videoplayback.mp4" type="video/mp4">
+               <p>현재 버전은 최신브라우저가 아닙니다. <br />
+                  최신브라우저를 설치해주세요.
+               </p>
+            </video>
+         </div> -->
+      <div class="banner_right">
+         <ul>
+            <li><span class="Rn">01</span><span class="line"></span></li>
+            <li><span class="Rn">02</span><span class="line"></span></li>
+            <li><span class="Rn">03</span><span class="line"></span></li>
+            <li><span class="Rn">04</span><span class="line"></span></li>
+            <li><span class="Rn">05</span><span class="line"></span></li>
+         </ul>
+      </div>
+      <div class="scroll">
+      <div class="mouse">
+         <p class="wheel">스크롤바를 내리면 작품을 감상할 수 있습니다.</p>
+      </div>
+         <p>Scroll</p>
+      </div>
     </section>
     
     
@@ -49,6 +94,6 @@
 <script src="../js/base/jquery-3.4.1.min.js"></script>
 <script src="../js/base/jquery-ui.min.js"></script>
 <script src="../js/src/main.js"></script>
-<script src="../js/src/rwd_check.js"></script>
+<!-- <script src="../js/src/rwd_check.js"></script> -->
 </body>
 </html>

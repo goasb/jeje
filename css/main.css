@@ -1,27 +1,68 @@
 /* main.css */
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
-#wrap { width: 100%; height: 100%; background-color: #222; }
+#wrap { width: 100%; height: 100%; background-color: #999; }
 
-#wrap { width: 100%; height: auto; background-color: #ccc; }
+#headBox { position: fixed; width: 100%; height: 70px; background-color: rgba(255, 255, 255, 0.1); }
 
-#headBox { width: 100px; height: auto; }
+#headBox h1 { width: 70px; height: 70px; margin: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 60%; background-image: url("../img/tesla.png"); }
 
-#headBox .gnb { position: relative; width: 100%; height: 50px; background-color: #2ad; }
+#headBox h1 a { display: block; width: 100%; height: 100%; }
 
-#headBox .gnb .menu { position: absolute; left: 30px; top: 0; bottom: 0; margin: auto; width: 50px; height: 50px; background-color: #ccc; }
+#headBox .menu { position: absolute; top: 0; left: 5%; width: 70px; height: 70px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 50%; background-image: url("../img/menu.png"); }
 
-#headBox .gnb .logo { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 50px; height: 50px; background-color: #1fa; }
+#headBox .menu a { display: block; width: 100%; height: 100%; }
 
-#headBox .gnb .contect { position: absolute; right: 30px; top: 0; bottom: 0; margin: auto; width: 100px; height: 50px; background-color: #fca; }
+#headBox .search_area { position: absolute; top: 0; bottom: 0; right: 5%; margin: auto; width: 230px; height: 30px; }
 
-#banner { width: 100%; height: 525px; background-color: #ca2; }
+#headBox .search_area .search { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #fff; }
 
-#banner .side_left { float: left; width: 150px; height: 100%; background-color: #faf; }
+#headBox .search_area .search #searchBar { float: left; width: 200px; height: 30px; border: none; background-color: rgba(255, 255, 255, 0.2); }
 
-#banner .side_right { float: right; width: 150px; height: 100%; background-color: #faf; }
+#headBox .search_area .search #searchBar::placeholder { color: #fff; }
 
-#wrap { width: 100%; height: 100%; background-color: #fff; }
+#headBox .search_area .search .search_icon { float: right; width: 30px; height: 30px; background-color: transparent; color: #fff; }
 
-h1 { color: #222; }
+#banner { width: 100%; height: 936px; background-color: #555; }
 
-#headBox { width: 100%; height: 200px; background-color: #faf; }
+#banner .banner_left { position: absolute; top: 0; bottom: 0; margin: auto; width: 120px; height: 200px; }
+
+#banner .banner_left .nameBox { position: relative; width: 100%; height: 100px; }
+
+#banner .banner_left .nameBox .name { position: absolute; bottom: 45%; right: 0; transform: rotate(-90deg); text-align: center; font-size: 1.2rem; width: 70px; height: 30px; font-weight: bold; color: #fff; letter-spacing: 10px; }
+
+#banner .banner_left .numberBox { width: 100%; height: 40px; }
+
+#banner .banner_left .numberBox:before { content: " "; display: block; width: 100px; height: 1px; background-color: #f06; }
+
+#banner .banner_left .numberBox .number { position: absolute; bottom: 0; top: 30%; right: 0; margin: auto; width: 70px; height: 20px; text-align: center; font-weight: bold; color: #fff; }
+
+#banner .banner_right { position: absolute; top: 0; bottom: 0; right: 3%; margin: auto; width: 140px; height: 200px; }
+
+#banner .banner_right ul { width: 100%; height: 100%; }
+
+#banner .banner_right ul li { width: 100%; height: 20%; }
+
+#banner .banner_right ul li .Rn { float: left; width: 10%; height: 40px; font-weight: bold; line-height: 40px; color: #fff; }
+
+#banner .banner_right ul li .line { position: relative; top: 50%; float: right; width: 90px; height: 1px; background-color: #f06; }
+
+#banner .banner_right ul li:nth-child(2) .line { width: 50px; height: 1px; background-color: #fff; }
+
+#banner .banner_right ul li:nth-child(3) .line { width: 50px; height: 1px; background-color: #fff; }
+
+#banner .banner_right ul li:nth-child(4) .line { width: 50px; height: 1px; background-color: #fff; }
+
+#banner .banner_right ul li:nth-child(5) .line { width: 50px; height: 1px; background-color: #fff; }
+
+@keyframes mousewheel { 0% { height: 0;
+    top: 0; }
+  100% { height: 50px;
+    top: 50%; } }
+
+#banner .scroll { position: absolute; bottom: 4%; left: 0; right: 0; margin: auto; width: 50px; height: 100px; }
+
+#banner .scroll .mouse { position: absolute; bottom: 4%; left: 0; right: 55%; margin: auto; width: 10px; height: 100px; }
+
+#banner .scroll .mouse .wheel { position: absolute; width: 1px; height: 50px; right: 0; left: 0; margin: auto; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; animation: mousewheel 1s linear infinite; }
+
+#banner .scroll p { position: absolute; bottom: 60%; right: 0; font-size: 0.8rem; color: #fff; transform: rotate(-90deg); }
