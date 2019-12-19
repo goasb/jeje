@@ -1,11 +1,11 @@
 #wrap {width: 100%; height: 100%; background-color:#999;}
-#headBox {position:fixed; width:100%; height:70px; background-color:rgba(255,255,255,0.1);
+#headBox {position:fixed; z-index: 1000; width:100%; height:70px; background-color:rgba(255,255,255,0.1);
 h1 {width: 70px; height: 70px; margin:auto; @include url; background-size:60%; background-image: url("../img/tesla.png");
 a {display: block; width: 100%; height: 100%;}}
 
 .menu {position:absolute; top:0; left:5%; width:70px; height: 70px; @include url;
        background-size: 50%;
-       background-image: url("../img/menu.png");
+       background-image: url("../img/menu.png" );
     a{display: block; width: 100%; height: 100%;}
 } // .menu
 .search_area {position:absolute; top:0; bottom:0; right:5%; margin:auto; width: 230px; height: 30px; 
@@ -19,6 +19,14 @@ a {display: block; width: 100%; height: 100%;}}
 } // #headBox
 
 #banner {width: 100%; height: 936px; background-color: #555;
+
+  .banner_video {position:relative; width: 100%; height:936px; margin:auto; background-color:#fff; overflow: hidden;
+    video {position: absolute; width: 100%; min-width:100%; height:auto; min-height:100%; left:50%; top:0; transform:translate(-50%,-10%);
+            @include url;
+            background-image: url("../img/tesla_poster.jpg");
+    } // video
+  } // .banner_video 
+
  .banner_left {position: absolute; top:0; bottom:0; margin:auto; width: 120px; height:200px; 
   .nameBox {position:relative; width:100%; height: 100px; 
     .name {position:absolute; bottom:45%; right:0; transform: rotate(-90deg); text-align: center; font-size:1.2rem; 
