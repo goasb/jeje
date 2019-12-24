@@ -1,3 +1,5 @@
+body{overflow-X: hidden; overflow-Y:auto;}
+
 @media screen and (min-width:1920px) {
 
 #wrap {width: 100%; height: 100%; background-color:#999;}
@@ -20,16 +22,16 @@ a {display: block; width: 100%; height: 100%;}}
  } // .search_area
 } // #headBox
 
-#banner {width: 100%; height: 936px; background-color: #555;
+#banner {width: 100%; height: 100%; background-color: #555;
 
-  .banner_video {position:relative; width: 100%; height:936px; margin:auto; background-color:#fff; overflow: hidden;
-    video {position: absolute; width: 100%; min-width:100%; height:auto; min-height:100%; left:50%; top:0; transform:translate(-50%,-10%);
+  .banner_video {position:relative; width: 100%; height:100%; margin:auto; background-color:#fff; overflow: hidden;
+    video {position: absolute; width: 100%; min-width:100%; height:auto; min-height:100%; left:50%; top:0; transform:translate(-50%,0);
             @include url;
             background-image: url("../img/tesla_poster.jpg");
     } // video
   } // .banner_video 
 
- .banner_left {position: absolute; top:0; bottom:0; margin:auto; width: 120px; height:200px; 
+ .banner_left {position: fixed; z-index:100; top:0; bottom:0; margin:auto; width: 120px; height:200px; 
   .nameBox {position:relative; width:100%; height: 100px; 
     .name {position:absolute; bottom:45%; right:0; transform: rotate(-90deg); text-align: center; font-size:1.2rem; 
         width: 70px; height:30px; font-weight:bold; color:#fff; letter-spacing:10px;}
@@ -39,7 +41,7 @@ a {display: block; width: 100%; height: 100%;}}
     .number {position:absolute; bottom:0; top:30%; right:0; margin:auto; width: 70px; height: 20px; text-align: center; font-weight:bold; color:#fff;}
     } // .numberBox
  } // .banner_left
- .banner_right {position: absolute; top:0; bottom:0; right:3%; margin:auto; width: 140px; height:200px; 
+ .banner_right {position:fixed; z-index:100; top:0; bottom:0; right:3%; margin:auto; width: 140px; height:200px; 
     ul{width:100%; height:100%;
         li{width:100%; height:20%;
     .Rn {float:left; width:10%; height: 40px; font-weight:bold; line-height:40px; color:#fff;}
@@ -65,5 +67,60 @@ a {display: block; width: 100%; height: 100%;}}
  p {position: absolute; bottom:60%; right:0; font-size:0.8rem; color:#fff; transform: rotate(-90deg);}
  } // .scroll
 }// #banner
+
+#modelS {width: 100%; height: 100%; margin-top:20rem; background-color: #999;
+.Sinfo {position:relative; float:left; width: 60%; height: 100%; background-color: #fff;
+ .sImg {position: absolute; width:800px; height:500px; @include margin; top:-20%; @include url; background-image: url("../img/modelS.png");}
+  >span {position: absolute; @include margin; top:62%; display: block; text-align: center; font-weight:bold; color:#555; letter-spacing:10px;}
+ .spec {position: absolute; @include margin; bottom:-70%; width: 603px; height: 100px;
+  ul {width: 100%; height:auto;
+    strong {display:block; width:200px; height: 50px; font-weight:bold; text-align:center; font-style:normal; color:#333; font-size:1.3rem;}
+    span {display:block; width: 200px; height:50px;text-align:center; color:#333;}
+    li{position: relative;}
+    .zeroH {float:left; width: 200px; height: 100%;}
+    .liter {float:left; width: 200px; height: 100%;}
+    .street {float:left; width: 200px; height: 100%;}
+    li:before {content:" "; display: block; position:absolute; top:0; bottom:0; margin:auto; height:40px; width:1px; background-color:#333;}
+    li:first-child:before{width:0;}
+    } // ul
+   } // .spec
+  } // .Sinfo
+.Sorder {position: relative; float:left; width: 40%; height: 100%;
+ .welcomeBox {position:absolute; right:0; left:0; width: 400px; height: 100%; margin:auto;
+  >span {position: absolute; display: block; right:40%; left:0; bottom:0; top:0; margin:auto; width:200px; height: 0; font-size:6rem; font-weight:bold; color:#fff;
+  transform:rotate(-90deg);}  
+  .orderBox {position: absolute; bottom:12%; right:0; left:0; width: 180px; height: 50px; margin:auto; border:1px solid #fff; border-radius:5px;
+   span {display: block; width: 100%; height: 100%; text-align: center; line-height:50px;
+    a {display: block; color:#fff; }
+     } // span
+    } // .orderBox
+   } //.welcomeBox
+  } // .Sorder
+ } // #modelS
+
+
+ #interior {position:relative; margin-top:20rem; width: 100%; height: 100%; background-color: #fff; 
+  h2 {font-size: 2rem;}
+  span {font-size:1rem; font-weight:bold;}
+  p {margin-top:20px; line-height:25px; font-weight:600;}
+  
+  .fadeout {display:none; width: 100%; height: 100%;
+  .perfomanceBox {position: absolute; @include margin; padding-left:60px; padding-top:60px; width: 1000px; height: 600px; border:1px solid #222; 
+  .more {display: block; margin-top:2rem; width: 180px; height: 50px; border:1px solid #222; border-radius:5px;
+   a {display: block; color:#222; text-align: center; line-height:50px;}
+   } // .more
+  } //.perfomanceBox
+
+  .interior_img_01 {position: absolute; right:5%; top:5%; margin:auto; width:740px; height: 410px;
+    @include url; background-image: url("../img/modelS_back.png");}
+  .interior_img_02 {position: absolute; bottom:5%; left:8.5%; margin:auto; width:500px; height:400px; 
+    @include url; background-image: url("../img/door.png");}   
+  } // fadeout                   
+
+    /*fadein*/
+  .fadein_interior {position:relative; margin-top:20rem; width: 100%; height: 100%; background-color: #ccc;
+   >.performanceBox {position: absolute; @include margin; padding-left:60px; padding-top:60px; width: 1000px; height: 600px;}
+  } // .fadein_interior
+ } // #interior
 
 } // media screen
