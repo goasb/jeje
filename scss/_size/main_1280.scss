@@ -1,3 +1,5 @@
+body{overflow-X: hidden; overflow-Y:auto;}
+
 @media screen and (min-width:1280px) and (max-width:1919px) {
 
     #wrap {width: 100%; height: 100%; background-color:#777;}
@@ -20,7 +22,7 @@
      } // .search_area
     } // #headBox
     
-    #banner {width: 100%; height:100%; background-color: #faf; 
+    #banner {width: 100%; height:100%;
     
       .banner_video {position:relative; width: 100%; height:100%; margin:auto; background-color:#fff; 
         video {position: absolute; width: 100%; min-width:100%; height:auto; min-height:100%; left:50%; top:0; transform:translate(-50%,-10%);
@@ -85,9 +87,11 @@
         } // .Sinfo
       .Sorder {position: relative; float:left; width: 40%; height: 100%;
        .welcomeBox {position:absolute; right:0; left:0; width: 400px; height: 100%; margin:auto;
-        >span {position: absolute; display: block; right:40%; left:0; bottom:0; top:0; margin:auto; width:200px; height: 0; font-size:6rem; font-weight:bold; color:#fff;
+        >span {position: absolute; display: block; right:25%; left:0; bottom:0; top:0; margin:auto; width:200px; height: 0; 
+          font-size:4rem; font-weight:bold; color:#fff;
         transform:rotate(-90deg);}  
-        .orderBox {position: absolute; bottom:12%; right:0; left:0; width: 150px; height: 40px; margin:auto; border:1px solid #fff; border-radius:5px;
+        .orderBox {position: absolute; bottom:12%; right:0; left:0; width: 150px; height: 40px; margin:auto; 
+          border:1px solid #fff; border-radius:5px;
          span {display: block; width: 100%; height: 100%; text-align: center; line-height:40px; font-size:0.8rem;
           a {display: block; color:#fff; }
            } // span
@@ -103,7 +107,8 @@
         p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600;}
         
         .fadeout {display:none; width: 100%; height: 100%;
-        .perfomanceBox {position: absolute; @include margin; padding-left:60px; padding-top:60px; width: 1000px; height: 500px; border:1px solid #222; 
+        .perfomanceBox {position: absolute; @include margin; padding-left:60px; padding-top:60px; 
+          width: 1000px; height: 500px; border:1px solid #222; 
         .more {display: block; margin-top:2rem; width: 150px; height: 40px; border:1px solid #222; border-radius:5px;
          a {display: block; color:#222; text-align: center; line-height:40px; font-size: 0.8rem;}
          } // .more
@@ -123,20 +128,38 @@
           h2 {font-size: 1.8rem; color:#fff;}
           span {font-size:0.8rem; font-weight:bold; color:#fff;}
           p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600; color:#fff;}
-         >.perfomanceBox {position: absolute; @include margin; top:10%; left:-10%; width: 1000px; height: 600px;}
+          
 
          .inside_text {position:absolute; bottom:0; margin:auto; width: 100%; height: 150px; 
           ul {width: 100%; height: 100%;
-            li {position: relative; float:left; margin-left: 200px; width:250px; height: 120px;
+            li {position: relative; float:left; margin-left: 140px; width:230px; height: 120px;
             strong {display: block; color:#fff; text-align: center;}
             span {display: block; line-height:1.8; text-align: center; font-size:0.7rem;}
-            &:before {content:" "; display: block; position: absolute; top:0; bottom:0; left:-40%; margin:auto; width: 1px; height: 30px; background-color: #fff;}
+            &:before {content:" "; display: block; position: absolute; top:0; bottom:0; left:-30%; margin:auto; width: 1px; height: 30px; background-color: #fff;}
             &:first-child:before{width:0;}
            } // li
           } // ul
          } // .inside_text
         } // .fadein_interior
        } // #interior
+
+       #spec_page {position: relative; width: 100%; height: 140%; margin-top:20rem; background-color: #ccc;
+          span {font-size:0.8rem; display:block; margin-bottom:20px; height: 20px; width:100px; font-weight:500; color:#fff; }
+          p {font-size:0.8rem; color:#fff;}
+          .spec_base {float:left; width:150px; height:100%; padding-top:10px; box-sizing:border-box;}
+          .spec_element {float:left; width:250px; height: 100%; padding-top:10px; box-sizing:border-box;}
+
+        .specImg {position:absolute; width: 100%; height: 100%; @include url; 
+          background-size:cover;
+          background-position:0 160%;
+          background-image:url("../img/spec_img.jpg");}
+        .spec_Ltext {position:absolute; @include margin; bottom:-50%; width:100%; height:250px; 
+
+         .Lbox {position: absolute; left:18.5%; width:400px; height:250px;
+        } // .Lbox
+         .Rbox {position: absolute; right:18.5%; width:400px; height:250px;}
+        } // .specImg
+      } // #spec_page
       
 
 } // media screen
