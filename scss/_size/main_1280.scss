@@ -143,21 +143,31 @@ body{overflow-X: hidden; overflow-Y:auto;}
         } // .fadein_interior
        } // #interior
 
-       #spec_page {position: relative; width: 100%; height: 140%; margin-top:20rem; background-color: #ccc;
-          span {font-size:0.8rem; display:block; margin-bottom:20px; height: 20px; width:100px; font-weight:500; color:#fff; }
+       #spec_page {position: relative; width: 100%; height: 100%; margin-top:20rem; background-color: #ccc;
+          span {font-size:0.8rem; display:block; margin-bottom:20px; height: 20px; width:100px; 
+            text-align: right; font-weight:600; color:#fff; }
           p {font-size:0.8rem; color:#fff;}
           .spec_base {float:left; width:150px; height:100%; padding-top:10px; box-sizing:border-box;}
           .spec_element {float:left; width:250px; height: 100%; padding-top:10px; box-sizing:border-box;}
+          a {display: block; width: 100%; height: 100%;}
 
         .specImg {position:absolute; width: 100%; height: 100%; @include url; 
           background-size:cover;
-          background-position:0 160%;
-          background-image:url("../img/spec_img.jpg");}
-        .spec_Ltext {position:absolute; @include margin; bottom:-50%; width:100%; height:250px; 
+          background-position:0 100%;
+          background-image:url("../img/spec_img_03.jpg");}
+        .Pbutton {position: absolute; z-index:1; left:14%; bottom:30%; width: 150px; height:40px; border-radius:5px; border:1px solid #fff;
+         span {display: block; width: 100%; height: 100%; line-height:40px; text-align: center; color:#fff; text-transform: uppercase;
+               letter-spacing:2px;}
+        } // .Pbutton
+        .Lbutton {position: absolute; z-index:1; left:14%; bottom:18%; width: 150px; height:40px; border-radius:5px; border:1px solid #fff;
+         span {display: block; width: 100%; height: 100%; line-height:40px; text-align: center; color:#fff; text-transform: uppercase;
+               letter-spacing:2px;}
+        } // .Lbutton
+        .spec_Atext {position:absolute; @include margin; bottom:-50%; width:100%; height:250px; 
 
-         .Lbox {position: absolute; left:18.5%; width:400px; height:250px;
+         .Abox {position: absolute; left:30.5%; width:400px; height:250px;
         } // .Lbox
-         .Rbox {position: absolute; right:18.5%; width:400px; height:250px;}
+         .A_2box {position: absolute; right:10%; width:400px; height:250px;}
         } // .specImg
       } // #spec_page
       
