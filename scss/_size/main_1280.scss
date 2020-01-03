@@ -170,6 +170,49 @@ body{overflow-X: hidden; overflow-Y:auto;}
          .A_2box {position: absolute; right:10%; width:400px; height:250px;}
         } // .specImg
       } // #spec_page
+
+#choiceBox {position:relative; width: 100%; height: 100%; margin-top:20rem;
+ .choice_video {position:absolute; width: 100%; height:100%; background-color: #faf;}
+ .model3 {position:absolute; @include margin; bottom:-50%; left:-50%; width: 280px; height: 140px; 
+  @include url;
+  background-image:url("../img/Model_3.jpg");
+  background-color: #1af;
+
+  ul {width: 100%; height: 100%; background-color: #fa0;
+    li {overflow: hidden;
+      a {display: block; width: 100%; height: 100%;
+     dl {width: 100%; height: 100%; background-color:rgba(0,0,0,0.7);
+     transform: translateY(80%); transition:300ms ease;
+       dt {width: 100%; height: 80px; text-align: center; line-height:2;
+        font-size:0.7rem; color:#fff;
+        font-weight: 900;
+        transition:all 300ms ease;}
+       dd {width: 100%; height:auto; text-align: center;
+        font-size:1.4rem; color:#fff; word-break:keep-all;
+        opacity:0; transition:all 300ms ease;}
+      } // dl
+     } // a
+    } // li
+   } // ul
+
+.model3.active dl{transform:translateY(0);}
+.model3.active dt{padding-top:15vh; color:#f30;}
+.model3.active dd{opacity:1;}
+
+} // model3
+ .modelX {position:absolute; @include margin; bottom:-50%; width: 280px; height: 140px; 
+  @include url;
+  background-size:cover;
+  background-image:url("../img/model_x.jpg");
+  background-color: #2fa;}
+
+ .roadster {position:absolute; @include margin; bottom:-50%; left:50%; width: 280px; height: 140px; 
+  @include url;
+  background-size:cover;
+  background-image:url("../img/roadster_03.jpg");
+  background-color: #5aa;}
+
+ } // #choiceBox
       
 
 } // media screen

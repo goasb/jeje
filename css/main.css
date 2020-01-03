@@ -92,7 +92,21 @@ body { overflow-X: hidden; overflow-Y: auto; }
   #spec_page .Lbutton span { display: block; width: 100%; height: 100%; line-height: 40px; text-align: center; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
   #spec_page .spec_Atext { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; width: 100%; height: 250px; }
   #spec_page .spec_Atext .Abox { position: absolute; left: 30.5%; width: 400px; height: 250px; }
-  #spec_page .spec_Atext .A_2box { position: absolute; right: 10%; width: 400px; height: 250px; } }
+  #spec_page .spec_Atext .A_2box { position: absolute; right: 10%; width: 400px; height: 250px; }
+  #choiceBox { position: relative; width: 100%; height: 100%; margin-top: 20rem; }
+  #choiceBox .choice_video { position: absolute; width: 100%; height: 100%; background-color: #faf; }
+  #choiceBox .model3 { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; left: -50%; width: 280px; height: 140px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/Model_3.jpg"); background-color: #1af; }
+  #choiceBox .model3 ul { width: 100%; height: 100%; background-color: #fa0; }
+  #choiceBox .model3 ul li { overflow: hidden; }
+  #choiceBox .model3 ul li a { display: block; width: 100%; height: 100%; }
+  #choiceBox .model3 ul li a dl { width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); transform: translateY(80%); transition: 300ms ease; }
+  #choiceBox .model3 ul li a dl dt { width: 100%; height: 80px; text-align: center; line-height: 2; font-size: 0.7rem; color: #fff; font-weight: 900; transition: all 300ms ease; }
+  #choiceBox .model3 ul li a dl dd { width: 100%; height: auto; text-align: center; font-size: 1.4rem; color: #fff; word-break: keep-all; opacity: 0; transition: all 300ms ease; }
+  #choiceBox .model3 .model3.active dl { transform: translateY(0); }
+  #choiceBox .model3 .model3.active dt { padding-top: 15vh; color: #f30; }
+  #choiceBox .model3 .model3.active dd { opacity: 1; }
+  #choiceBox .modelX { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; width: 280px; height: 140px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/model_x.jpg"); background-color: #2fa; }
+  #choiceBox .roadster { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; left: 50%; width: 280px; height: 140px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/roadster_03.jpg"); background-color: #5aa; } }
 
 body { overflow-X: hidden; overflow-Y: auto; }
 
