@@ -1,7 +1,6 @@
 (function($){
     const choice = $('#choiceBox');
     const modelLink = choice.find('a');
-    console.log(choiceBox);
   
     // .action
     modelLink.on('mouseenter focus', function(){
