@@ -1,18 +1,20 @@
 /* main.css */
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
+head { overflow-x: hidden; overflow-y: auto; }
+
 body { overflow-X: hidden; overflow-Y: auto; }
 
-@media screen and (min-width: 1280px) and (max-width: 1919px) { #wrap { width: 100%; height: 100%; background-color: #777; }
-  #headBox { position: fixed; z-index: 1000; width: 100%; height: 70px; background-color: rgba(255, 255, 255, 0.1); }
+@media screen and (min-width: 1280px) and (max-width: 1919px) { #wrap { width: 100%; height: 100%; }
+  #headBox { position: fixed; z-index: 100; width: 100%; height: 70px; background-color: rgba(255, 255, 255, 0.1); }
   #headBox h1 { width: 70px; height: 70px; margin: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 60%; background-image: url("../img/tesla.png"); }
   #headBox h1 a { display: block; width: 100%; height: 100%; }
-  #headBox .menu { position: absolute; top: 0; left: 3.5%; width: 70px; height: 70px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 30%; background-image: url("../img/menu.png"); }
-  #headBox .menu a { display: block; width: 100%; height: 100%; }
+  #headBox .menu { position: absolute; top: 28%; left: 5%; width: 30px; height: 30px; background-color: transparent; }
+  #headBox .menu i { line-height: 30px; font-size: 1.2rem; width: 100%; height: 100%; }
   #headBox .search_area { position: absolute; top: 0; bottom: 0; right: 5%; margin: auto; width: 230px; height: 30px; }
   #headBox .search_area .search { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #fff; }
   #headBox .search_area .search #searchBar { float: left; width: 200px; height: 30px; border: none; background-color: rgba(255, 255, 255, 0.2); }
   #headBox .search_area .search #searchBar::placeholder { color: #fff; font-size: 0.7rem; }
-  #headBox .search_area .search .search_icon { float: right; width: 30px; height: 30px; background-color: rgba(255, 255, 255, 0.2); color: #fff; }
+  #headBox .search_area .search .search_icon { width: 30px; height: 30px; background-color: rgba(255, 255, 255, 0.2); color: #fff; }
   #banner { width: 100%; height: 100%; }
   #banner .banner_video { position: relative; width: 100%; height: 100%; margin: auto; background-color: #fff; }
   #banner .banner_video video { position: absolute; width: 100%; min-width: 100%; height: auto; min-height: 100%; left: 50%; top: 0; transform: translate(-50%, -10%); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/tesla_poster.jpg"); }
@@ -38,6 +40,27 @@ body { overflow-X: hidden; overflow-Y: auto; }
   #banner .scroll .mouse { position: absolute; bottom: 2%; left: 0; right: 55%; margin: auto; width: 10px; height: 100px; }
   #banner .scroll .mouse .wheel { position: absolute; width: 1px; height: 50px; right: 0; left: 0; margin: auto; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; animation: mousewheel 1s linear infinite; }
   #banner .scroll p { position: absolute; bottom: 60%; right: 0; font-size: 0.8rem; color: #fff; transform: rotate(-90deg); }
+  #banner .menuDown { position: fixed; z-index: 100; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); }
+  #banner .menuDown button { position: absolute; z-index: 10; right: 4%; top: 4%; width: 40px; height: 40px; background-color: transparent; transition: all 300ms ease; }
+  #banner .menuDown button i { display: block; width: 100%; height: 100%; font-size: 2.5rem; text-align: center; line-height: 40px; }
+  #banner .menuDown button:hover, #banner .menuDown button:focus { outline: 0; transform: scale(1.1); }
+  #banner .menuDown .slide_Main { width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .indicator { position: absolute; z-index: 10; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: 65%; right: -48%; width: 90px; height: 15px; }
+  #banner .menuDown .slide_Main .indicator ul { width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .indicator ul li { float: left; margin-left: 20px; width: 12px; height: 12px; background-color: #fff; border-radius: 10px; }
+  #banner .menuDown .slide_Main .indicator ul li:nth-child(1) { margin-left: 0; }
+  #banner .menuDown .slide_Main .indicator ul li a { display: block; width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .slide_Img { width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List { position: relative; width: 300%; height: 100%; left: -100%; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .model_imgBox { width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .model_imgBox .model_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 500px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/Model_3.jpg"); }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .electric_imgBox { width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .electric_imgBox .electric_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 500px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/interior_02.jpg"); }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox { width: 100%; height: 100%; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox .interior_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 500px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/menu_roadster.jpg"); }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox span { display: block; float: left; margin-right: 40px; font-weight: bold; text-align: center; width: 100px; height: 30px; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox p { font-size: 0.8rem; font-weight: 600; line-height: 20px; color: #222; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .slide { float: left; width: 33.33333%; height: 100%; }
   #modelS { width: 100%; height: 100%; margin-top: 20rem; background-color: #999; }
   #modelS .Sinfo { position: relative; float: left; width: 60%; height: 100%; background-color: #fff; }
   #modelS .Sinfo .sImg { position: absolute; width: 500px; height: 500px; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -20%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/modelS.png"); }
@@ -74,7 +97,7 @@ body { overflow-X: hidden; overflow-Y: auto; }
   #interior .fadein_interior p { font-size: 0.8rem; margin-top: 20px; line-height: 22px; font-weight: 600; color: #fff; }
   #interior .fadein_interior .inside_text { position: absolute; bottom: 0; margin: auto; width: 100%; height: 150px; }
   #interior .fadein_interior .inside_text ul { width: 100%; height: 100%; }
-  #interior .fadein_interior .inside_text ul li { position: relative; float: left; margin-left: 140px; width: 230px; height: 120px; }
+  #interior .fadein_interior .inside_text ul li { position: relative; float: left; margin-left: 13%; width: 230px; height: 120px; }
   #interior .fadein_interior .inside_text ul li strong { display: block; color: #fff; text-align: center; }
   #interior .fadein_interior .inside_text ul li span { display: block; line-height: 1.8; text-align: center; font-size: 0.7rem; }
   #interior .fadein_interior .inside_text ul li:before { content: " "; display: block; position: absolute; top: 0; bottom: 0; left: -30%; margin: auto; width: 1px; height: 30px; background-color: #fff; }

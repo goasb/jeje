@@ -26,13 +26,15 @@
  <noscript>
   <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />자바스크립트의 기능을 활성화 해주세요</p>
   <p><a target="_blank" href="http://enable-javascript.com/ko"></a>자바스크립트 활성화 처리하기</p>
+  <header id="headBox">
  </noscript>
  <!-- noscript ================================================== -->
    <div id="wrap">
       <h1 class="hidden">테슬라 홈페이지</h1>
-      <header id="headBox">
          <h1><a href="main.html"><span class="hidden">tesla_logo</span></a></h1>
-           <div class="menu"><a href="#"></a></div>
+           <button type="submit" class="menu" aria-hidden="true">
+              <i class="fas fa-bars"></i>
+           </button>
 
            <div class="search_area">
             <div class="search">
@@ -48,9 +50,9 @@
                 </fieldset>
                </form>
            </div>
-         </div>
+         </div> <!-- search_area -->
       </header>
-    
+
 
     <section id="banner">
        <div class="banner_video">
@@ -85,11 +87,53 @@ v
       </div>
          <p>Scroll</p>
       </div>
+
+<!-- ================================ pop section ============================================== -->
+
+<div class="menuDown">
+
+   <div class="slide_Main">
+   <div class="indicator">
+      <ul>
+         <li><a href="#"><span class="hidden">MODEL</span></a></li>
+         <li><a href="#"><span class="hidden">ELECTRIC</span></a></li>
+         <li><a href="#"><span class="hidden">INTERIOR</span></a></li>
+      </ul>
+   </div> <!-- indicator -->
+
+   <div class="slide_Img">
+      <button type="button">
+         <i class="far fa-times-circle" aria-hidden="true"></i>
+      </button>
+
+      <div class="slide_Img_List">
+         <div class="model_imgBox slide">
+           <div class="model_img"></div>
+         </div>
+
+         <div class="electric_imgBox slide">
+            <div class="electric_img"></div>
+         </div>
+
+         <div class="interior_imgBox slide">
+            <div class="interior_img">
+            <span>Roadster</span>
+            <p>전 세계에서 가장 빠른 자동차 기록적인 가속력, 주행 거리 및 성능</p>
+           </div>
+         </div>
+         
+      </div> <!-- slide_Img_List -->
+   </div> <!-- slide_Img -->
+ </div> <!-- slide_Main -->
+</div> <!-- menuDown -->
+
+
     </section>
 
     <section id="modelS">
        <div class="Sinfo">
-          <div class="sImg"></div>
+          <div class="sImg">
+          </div>
           <span>NEW MODEL S</span>
           <div class="spec">
              <ul>
@@ -167,6 +211,7 @@ v
             <p>19인치 또는 21인치</p> <br />
            </div>
          </div>
+
          <div class="A_2box">
             <div class="spec_base">
              <span>중량</span>
