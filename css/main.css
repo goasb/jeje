@@ -58,8 +58,9 @@ body { overflow-X: hidden; overflow-Y: auto; }
   #banner .menuDown .slide_Main .slide_Img .slide_Img_List .electric_imgBox .electric_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 500px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/interior_02.jpg"); }
   #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox { width: 100%; height: 100%; }
   #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox .interior_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 500px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/menu_roadster.jpg"); }
-  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox span { display: block; float: left; margin-right: 40px; font-weight: bold; text-align: center; width: 100px; height: 30px; }
-  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox p { font-size: 0.8rem; font-weight: 600; line-height: 20px; color: #222; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox dl { position: absolute; bottom: -13%; width: 550px; height: 30px; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox dl dt { float: left; margin-right: 40px; font-size: 1.6rem; font-weight: bold; text-align: center; width: 100px; height: 30px; color: #fff; }
+  #banner .menuDown .slide_Main .slide_Img .slide_Img_List .interior_imgBox dl dd { font-size: 0.8rem; font-weight: 600; line-height: 23px; color: #fff; }
   #banner .menuDown .slide_Main .slide_Img .slide_Img_List .slide { float: left; width: 33.33333%; height: 100%; }
   #modelS { width: 100%; height: 100%; margin-top: 20rem; background-color: #999; }
   #modelS .Sinfo { position: relative; float: left; width: 60%; height: 100%; background-color: #fff; }
