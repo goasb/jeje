@@ -1,5 +1,5 @@
 head {overflow-x: hidden; overflow-y:auto;}
-body {overflow-X: hidden; overflow-Y:auto;}
+body {overflow-x: hidden; overflow-y:auto;}
 
 @media screen and (min-width:1280px) and (max-width:1919px) {
 
@@ -37,7 +37,8 @@ body {overflow-X: hidden; overflow-Y:auto;}
     } // .name
       .numberBox {width: 100%; height: 40px; 
         &:before {content:" "; display: block; width: 100px; height: 1px; background-color:$primary;}
-        .number {position:absolute; bottom:0; top:30%; right:0; margin:auto; width: 70px; height: 20px; text-align: center; font-weight:bold; color:#fff;}
+        .number {position:absolute; bottom:0; top:30%; right:0; margin:auto; width: 70px; height: 20px; 
+          text-align: center; font-weight:bold; color:#fff;}
         } // .numberBox
      } // .banner_left
      .banner_right {position: fixed; z-index:10; top:10%; bottom:0; right:3%; margin:auto; width: 100px; height:200px; 
@@ -56,54 +57,67 @@ body {overflow-X: hidden; overflow-Y:auto;}
         0% {height:0; top:0;}
         100% {height:50px; top:50%;}
     } // @keyframs
-    .scroll {position: absolute; bottom:2%; left:0; right:0; margin:auto; width: 50px; height: 100px; 
+    .scrollMouse {position: absolute; bottom:2%; left:0; right:0; margin:auto; width: 50px; height: 100px; 
      .mouse {position: absolute; bottom:2%; left:0; right:55%; margin:auto; width: 10px; height: 100px;
       .wheel {position: absolute; width: 1px; height: 50px; right:0; left:0; margin:auto; transform:translateX(-50%);
               text-indent:-2000px; background-color:$white; animation:mousewheel 1s linear infinite;
       } // .wheel
      } // .mouse
      p {position: absolute; bottom:60%; right:0; font-size:0.8rem; color:$white; transform: rotate(-90deg);}
-     } // .scroll
+     } // .scrollMouse
 
-    .menuDown {position:fixed; z-index:100; width: 100%; height:100%; background-color:rgba(0,0,0,0.8);
-
-      button {position: absolute; z-index:10; right:4%; top:4%; width: 40px; height: 40px; 
-              background-color: transparent; transition:all 300ms ease;
+    .menuDown { display: none;
+      position:fixed; top:0; z-index:100; width: 100%; height:100%; background-color:rgba(0,0,0,0.8); 
+      .closeBtn {position: absolute; z-index:10; right:4%; top:4%; width: 40px; height: 40px; 
+        background-color: transparent; transition:all 300ms ease;
         i {display: block; width: 100%; height: 100%; font-size:2.5rem; text-align:center; line-height:40px;}
-      } // button
-      button:hover,
-      button:focus {outline:0; transform:scale(1.1);}
-
-     .slide_Main {width: 100%; height: 100%; 
-      .indicator {position: absolute; z-index:10; @include margin; top:65%; right:-48%; width:90px; height: 15px;
-        ul {width: 100%; height: 100%;
-         li {float:left; margin-left: 20px; width: 12px; height: 12px; background-color: #fff; border-radius:10px;
-          &:nth-child(1) {margin-left:0;}
+      } // closeBtn
+      .closeBtn:hover,
+      .closeBtn:focus {outline:0; transform:scale(1.1);}
+      
+      .slide_Main {width: 100%; height: 100%;
+        .slideBtn {position: absolute; z-index:10; @include margin; width: 100%; height:0; background-color:#faf;
+            button {width: 100px; height: 50px; background-color:transparent;
+              transform:translateY(-90%); transition:all 300ms ease;
+            i {display: block; width: 100%; height: 100%; font-size:4rem; line-height:50px; color:#fff;}
+            &.next {margin-right:200px; float:right;}
+            &.prev {margin-left:200px; float:left; &:hover{transform:translate(-40px,-90%);}}
+            &:hover,
+            &:focus {background-color:transparent; outline:0; transform:translate(40px,-90%);}
+          } // button
+        } // .slideBtn
+        
+        
+          .indicator {position: absolute; z-index:10; @include margin; top:70%; right:-46%; width:90px; height: 15px;
+            ul {width: 100%; height: 100%;
+              li {float:left; margin-left: 20px; width: 12px; height: 12px; background-color: #fff; border-radius:10px;
+                &:nth-child(1) {margin-left:0;}
           a {display: block; width: 100%; height: 100%;}
         } // li
        } // ul
       } // .indicator
 
       .slide_Img {width: 100%; height: 100%;
-       .slide_Img_List {$count:3; position: relative; width: 100% * $count; height: 100%; left:-100%;
+
+        .slide_Img_List {$count:3; position: relative; width: 100% * $count; height: 100%; left:-100%;
 
         .model_imgBox {width:100%; height:100%;
-          .model_img {position:absolute; @include margin; top:-15%; width:800px; height: 500px;
+          .model_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%;
             @include url; background-size:cover; background-image: url("../../img/Model_3.jpg");}
             
         } // .model_img
 
         .electric_imgBox {width:100%; height:100%;
-          .electric_img {position:absolute; @include margin; top:-15%; width:800px; height: 500px; 
+          .electric_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%; 
             @include url; background-size:cover; background-image: url("../../img/interior_02.jpg");}
         } // .electric_img
 
         .interior_imgBox {width:100%; height:100%;
-          .interior_img {position:absolute; @include margin; top:-15%; width:800px; height: 500px;
+          .interior_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%;
             @include url; background-size:cover; background-image: url("../../img/menu_roadster.jpg");}
             dl {position:absolute; bottom:-13%; width: 550px; height:30px; 
               dt {float:left; margin-right:40px; font-size:1.6rem; font-weight:bold; text-align: center; width: 100px; height: 30px; color:#fff;}
-              dd {font-size: 0.8rem; font-weight:600; line-height:23px; color:#fff;} 
+              dd {font-size: 0.8rem; font-weight:600; line-height:40px; color:#fff;} 
             } // dl
         } // .electric_img
         
