@@ -1,18 +1,18 @@
 (function($){
 
 const openMenuBtn = $('.menu');
-const menuDown = $('.menuDown');
+const categori = $('.categori');
 const closeMenuBtn = $('.closeBtn');
 
 let time = 600;
 
 openMenuBtn.on('click',function(e){
     e.preventDefault();
-    menuDown.fadeIn(time*2);
+    categori.fadeIn(time*1);
 });
 closeMenuBtn.on('click',function(e){
     e.preventDefault();
-    menuDown.fadeOut(time*2);
+    categori.fadeOut(time*1);
 });
 
 })(jQuery);

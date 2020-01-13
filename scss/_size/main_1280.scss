@@ -66,7 +66,46 @@ body {overflow-x: hidden; overflow-y:auto;}
      p {position: absolute; bottom:60%; right:0; font-size:0.8rem; color:$white; transform: rotate(-90deg);}
      } // .scrollMouse
 
-    .menuDown { display: none;
+     /* ===================================== pop section ============================================ */
+
+     .categori {position:relative; z-index:100; top:-3%; width: 400px; height:auto; background-color:#fff;
+      transform:translatX(50%); transition:300ms ease;
+      .Btn_height {width: 100%; height: 50px;
+      .closeBtn {float:right; width:70px; height: 50px; font-size: 1.5rem; background-color:transparent; color:#222;}
+    }
+      a {display: block; width: 100%; height: 100%;}
+      span {display: block; font-size:0.9rem; color:#222; font-weight:bold; margin-left:30px;}
+      
+      ul {width: 100%; height: 100%;
+       li {width: 100%; height: 70px; line-height:70px; border-bottom:1px solid #222;
+      &:nth-child(9) {margin-top:40px; border-bottom:0; border-top:1px solid #222;}}
+     } // ul
+    } // .categori
+
+    .categori a.active {opacity:1; transform:translateX(0);}
+
+  //   dl {width: 100%; height:160px; background-color:rgba(0,0,0,0.7); 
+  //     transform: translateY(80%); transition:300ms ease; 
+  //       dt {width: 100%; height: 10px; text-align: center; line-height:30px;
+  //        font-size:0.7rem; color:#fff;
+  //        font-weight: 900;
+  //        transition:all 300ms ease;}
+  //       dd {width: 100%; height:100%; text-align: center; margin-top:30px;
+  //        font-size:0.7rem; color:#fff; line-height:18px;
+  //        opacity:0; transition:all 300ms ease;}
+  //      } // dl
+  //     } // a
+  //    } // li
+  //   } // ul
+  
+  // a.active dl{transform:translateY(0);}
+  // a.active dt{color:#f30;}
+  // a.active dd{opacity:1;}
+
+
+
+    /* ===================================== Event section ============================================ */
+    /* .menuDown { display: none;
       position:fixed; top:0; z-index:100; width: 100%; height:100%; background-color:rgba(0,0,0,0.8); 
       .closeBtn {position: absolute; z-index:10; right:4%; top:4%; width: 40px; height: 40px; 
         background-color: transparent; transition:all 300ms ease;
@@ -125,7 +164,7 @@ body {overflow-x: hidden; overflow-y:auto;}
        } // .slide_Img_List
       } // .slide_Img
      } // .slide_Main
-    } // .menuDown
+    } // .menuDown */
 
     }// #banner
 
@@ -255,7 +294,8 @@ body {overflow-x: hidden; overflow-y:auto;}
  a.active dt{color:#f30;}
  a.active dd{opacity:1;}
 
- .choice_video {position:absolute; width: 100%; height:100%; background-color: #ccc;}
+ .choice_video {position:absolute; width: 100%; height:100%; background-color: #ccc;
+@include url; background-size:cover; background-image:url("../../img/tesla_bgc_02.jpg");}
  .model3 {position:absolute; @include margin; bottom:-50%; left:-50%; width: 300px; height: 160px; 
   @include url;
   background-size: cover;
