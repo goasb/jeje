@@ -68,8 +68,8 @@ body {overflow-x: hidden; overflow-y:auto;}
 
      /* ===================================== pop section ============================================ */
 
-     .categori {position:relative; z-index:100; top:-3%; width: 400px; height:auto; background-color:#fff;
-      transform:translatX(50%); transition:300ms ease;
+     .categori {position:relative; z-index:100; top:-3%; width: 400px; height:auto; background-color:#fff; left:-400px;
+      transition:300ms ease;
       .Btn_height {width: 100%; height: 50px;
       .closeBtn {float:right; width:70px; height: 50px; font-size: 1.5rem; background-color:transparent; color:#222;}
     }
@@ -78,35 +78,82 @@ body {overflow-x: hidden; overflow-y:auto;}
       
       ul {width: 100%; height: 100%;
        li {width: 100%; height: 70px; line-height:70px; border-bottom:1px solid #222;
-      &:nth-child(9) {margin-top:40px; border-bottom:0; border-top:1px solid #222;}}
+      &:nth-child(9) {margin-top:40px; border-bottom:0; border-top:1px solid #222;}
+      } // li
      } // ul
     } // .categori
-
-    .categori a.active {opacity:1; transform:translateX(0);}
-
-  //   dl {width: 100%; height:160px; background-color:rgba(0,0,0,0.7); 
-  //     transform: translateY(80%); transition:300ms ease; 
-  //       dt {width: 100%; height: 10px; text-align: center; line-height:30px;
-  //        font-size:0.7rem; color:#fff;
-  //        font-weight: 900;
-  //        transition:all 300ms ease;}
-  //       dd {width: 100%; height:100%; text-align: center; margin-top:30px;
-  //        font-size:0.7rem; color:#fff; line-height:18px;
-  //        opacity:0; transition:all 300ms ease;}
-  //      } // dl
-  //     } // a
-  //    } // li
-  //   } // ul
-  
-  // a.active dl{transform:translateY(0);}
-  // a.active dt{color:#f30;}
-  // a.active dd{opacity:1;}
+    
+    .categori.active {transform:translateX(100%); transition:300ms ease;}
+    }// #banner
 
 
+    #modelS {position: relative; width: 100%; height: 100%; margin-top:20rem; 
+      .Sinfo {position:relative; left:-15%; width: 100%; height: 100%; background-color: #fff;
+       .sImg {position: absolute; width:500px; height:500px; @include margin; top:-20%; @include url; background-image: url("../img/modelS.png");}
+        >span {position: absolute; @include margin; top:62%; display: block; text-align: center; font-weight:bold; color:#555; letter-spacing:10px;}
+       .spec {position: absolute; @include margin; bottom:-70%; width: 603px; height: 100px;
+        ul {width: 100%; height:auto;
+          strong {display:block; width:200px; height: 50px; font-weight:bold; text-align:center; font-style:normal; color:#333; font-size:1.1rem;}
+          span {display:block; width: 200px; height:50px;text-align:center; color:#333; font-size:0.8rem;}
+          li{position: relative;}
+          .zeroH {float:left; width: 200px; height: 100%;}
+          .liter {float:left; width: 200px; height: 100%;}
+          .street {float:left; width: 200px; height: 100%;}
+          li:before {content:" "; display: block; position:absolute; top:0; bottom:0; margin:auto; height:40px; width:1px; background-color:#333;}
+          li:first-child:before{width:0;}
+          } // ul
+         } // .spec
+         .Stext {position:relative; margin:auto; right:-40%; width: 400px; height: 100%;
+           span {display: block; width: 100%; height: 100%; text-align: center; line-height:30px; font-size:0.8rem;
+              a {display: block; color:#222; }
+                } // span
 
-    /* ===================================== Event section ============================================ */
-    /* .menuDown { display: none;
-      position:fixed; top:0; z-index:100; width: 100%; height:100%; background-color:rgba(0,0,0,0.8); 
+          .redBox {position: absolute; top:28%; width: 20px; height: 5px; background-color:$primary;}
+          p {font-size:0.8rem; }
+          dl {font-size:0.8rem; padding-top:220px; box-sizing: border-box;
+           dt {font-size:1.8rem; font-weight:bold; margin-bottom:15px;}
+           dd {width: 280px; height:auto; font-size:0.8rem; line-height:20px;}
+          } // dl
+
+         .readMore {position: absolute; margin:auto; bottom:18%; width: 150px; height: 30px;
+          border:1px solid #222; border-radius:5px;}
+
+         .orderBox {position: absolute; margin:auto; bottom:12%; width: 150px; height: 30px;
+           border:1px solid #222; border-radius:5px;
+            } // .orderBox
+          } // .Stext
+        } // .Sinfo
+       } // #modelS
+      
+      
+       #interior {width: 100%; height: 100%; margin-top:20rem;
+        .interiorBox {position:relative; width: 100%; height: 100%;
+          @include url; 
+          background-size: cover;
+          background-image: url("../img/interior_main.jpg");
+          span {font-size:0.8rem; font-weight:bold; color:#fff;}
+          p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600; color:#fff;}
+
+         .clickBox {position:absolute; @include margin; width: 50px; height: 50px; border:1px solid #fff; border-radius:100px;
+          span {display: block; text-align:center; line-height:50px;}
+          a {display: block; width: 100%; height: 100%; color:#fff;}
+        } // .clickBox
+          
+         .inside_text {position:absolute; bottom:0; margin:auto; width: 100%; height: 150px; 
+          ul {width: 100%; height: 100%;
+            li {position: relative; float:left; margin-left: 13%; width:230px; height: 120px;
+            strong {display: block; color:#fff; text-align: center;}
+            span {display: block; line-height:1.8; text-align: center; font-size:0.7rem;}
+            &:before {content:" "; display: block; position: absolute; top:0; bottom:0; left:-30%; margin:auto; width: 1px; height: 30px; background-color: #fff;}
+            &:first-child:before{width:0;}
+           } // li
+          } // ul
+         } // .inside_text
+        } // .interiorBox
+
+/* ===================================== popup section ============================================ */
+      .popupBox {display: block; position:fixed; top:0; z-index:100; display: none;
+                 width: 100%; height:100%; background-color:rgba(0,0,0,0.9); 
       .closeBtn {position: absolute; z-index:10; right:4%; top:4%; width: 40px; height: 40px; 
         background-color: transparent; transition:all 300ms ease;
         i {display: block; width: 100%; height: 100%; font-size:2.5rem; text-align:center; line-height:40px;}
@@ -127,9 +174,9 @@ body {overflow-x: hidden; overflow-y:auto;}
         } // .slideBtn
         
         
-          .indicator {position: absolute; z-index:10; @include margin; top:70%; right:-46%; width:90px; height: 15px;
+          .indicator {position: absolute; z-index:10; @include margin; bottom:-70%; right:-47%; width:120px; height: 15px;
             ul {width: 100%; height: 100%;
-              li {float:left; margin-left: 20px; width: 12px; height: 12px; background-color: #fff; border-radius:10px;
+              li {float:left; margin-left: 20px; width:8px; height:8px; border:1px solid #fff; border-radius:10px;
                 &:nth-child(1) {margin-left:0;}
           a {display: block; width: 100%; height: 100%;}
         } // li
@@ -137,112 +184,40 @@ body {overflow-x: hidden; overflow-y:auto;}
       } // .indicator
 
       .slide_Img {width: 100%; height: 100%;
+        dl {position:absolute; bottom:-13%; width: 700px; height:30px; 
+          dd {font-size: 0.8rem; font-weight:600; line-height:40px; color:#fff;} 
+        } // dl
 
         .slide_Img_List {$count:3; position: relative; width: 100% * $count; height: 100%; left:-100%;
 
-        .model_imgBox {width:100%; height:100%;
-          .model_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%;
-            @include url; background-size:cover; background-image: url("../../img/Model_3.jpg");}
-            
-        } // .model_img
+        .interior_01_imgBox {width:100%; height:100%;
+          .interior_01_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%;
+            @include url; background-size:cover; background-image: url("../img/interior_01.jpg");}
+        } // interior_01_imgBox
 
-        .electric_imgBox {width:100%; height:100%;
-          .electric_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%; 
-            @include url; background-size:cover; background-image: url("../../img/interior_02.jpg");}
-        } // .electric_img
+        .interior_02_imgBox {width:100%; height:100%;
+          .interior_02_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%; display: none;
+            @include url; background-size:cover; background-image: url("../img/interior_02.jpg");}
+        } // interior_02_imgBox
 
-        .interior_imgBox {width:100%; height:100%;
-          .interior_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%;
-            @include url; background-size:cover; background-image: url("../../img/menu_roadster.jpg");}
-            dl {position:absolute; bottom:-13%; width: 550px; height:30px; 
-              dt {float:left; margin-right:40px; font-size:1.6rem; font-weight:bold; text-align: center; width: 100px; height: 30px; color:#fff;}
-              dd {font-size: 0.8rem; font-weight:600; line-height:40px; color:#fff;} 
-            } // dl
-        } // .electric_img
+        .interior_03_imgBox {width:100%; height:100%;
+          .interior_03_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%; display: none;
+            @include url; background-size:cover; background-image: url("../img/interior_03.jpg");}
+        } // interior_03_imgBox
+
+        .interior_04_imgBox {width:100%; height:100%;
+          .interior_04_img {position:absolute; @include margin; top:-15%; width:800px; height: 70%; display: none;
+            @include url; background-size:cover; background-image: url("../img/interior_04.jpg");}
+        } // interior_04_imgBox
         
         .slide {float:left; width:100% / $count; height: 100%;}
-       } // .slide_Img_List
-      } // .slide_Img
-     } // .slide_Main
-    } // .menuDown */
-
-    }// #banner
-
-
-    #modelS {width: 100%; height: 100%; margin-top:20rem; background-color: #999; 
-      .Sinfo {position:relative; float:left; width: 60%; height: 100%; background-color: #fff;
-       .sImg {position: absolute; width:500px; height:500px; @include margin; top:-20%; @include url; background-image: url("../img/modelS.png");}
-        >span {position: absolute; @include margin; top:62%; display: block; text-align: center; font-weight:bold; color:#555; letter-spacing:10px;}
-       .spec {position: absolute; @include margin; bottom:-70%; width: 603px; height: 100px;
-        ul {width: 100%; height:auto;
-          strong {display:block; width:200px; height: 50px; font-weight:bold; text-align:center; font-style:normal; color:#333; font-size:1.1rem;}
-          span {display:block; width: 200px; height:50px;text-align:center; color:#333; font-size:0.8rem;}
-          li{position: relative;}
-          .zeroH {float:left; width: 200px; height: 100%;}
-          .liter {float:left; width: 200px; height: 100%;}
-          .street {float:left; width: 200px; height: 100%;}
-          li:before {content:" "; display: block; position:absolute; top:0; bottom:0; margin:auto; height:40px; width:1px; background-color:#333;}
-          li:first-child:before{width:0;}
-          } // ul
-         } // .spec
-        } // .Sinfo
-      .Sorder {position: relative; float:left; width: 40%; height: 100%;
-       .welcomeBox {position:absolute; right:0; left:0; width: 400px; height: 100%; margin:auto;
-        >span {position: absolute; display: block; right:25%; left:0; bottom:0; top:0; margin:auto; width:200px; height: 0; 
-          font-size:4rem; font-weight:bold; color:#fff;
-        transform:rotate(-90deg);}  
-        .orderBox {position: absolute; bottom:12%; right:0; left:0; width: 150px; height: 40px; margin:auto; 
-          border:1px solid #fff; border-radius:5px;
-         span {display: block; width: 100%; height: 100%; text-align: center; line-height:40px; font-size:0.8rem;
-          a {display: block; color:#fff; }
-           } // span
-          } // .orderBox
-         } //.welcomeBox
-        } // .Sorder
-       } // #modelS
-      
-      
-       #interior {position:relative; margin-top:20rem; width: 100%; height: 100%; background-color: #fff; 
-        h2 {font-size: 1.8rem;}
-        span {font-size:0.8rem; font-weight:bold;}
-        p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600;}
-        
-        .fadeout {display:none; width: 100%; height: 100%;
-        .perfomanceBox {position: absolute; @include margin; padding-left:60px; padding-top:60px; 
-          width: 1000px; height: 500px; border:1px solid #222; 
-        .more {display: block; margin-top:2rem; width: 150px; height: 40px; border:1px solid #222; border-radius:5px;
-         a {display: block; color:#222; text-align: center; line-height:40px; font-size: 0.8rem;}
-         } // .more
-        } //.perfomanceBox
-      
-        .interior_img_01 {position: absolute; right:10%; top:-2%; margin:auto; width:580px; height: 370px;
-          @include url; background-image: url("../img/modelS_back.png");}
-        .interior_img_02 {position: absolute; bottom:10%; left:8.5%; margin:auto; width:380px; height:250px; 
-          @include url; background-image: url("../img/door.png");}   
-        } // fadeout                   
-      
-          /*fadein*/
-        .fadein_interior {position:relative; margin-top:20rem; width: 100%; height: 100%;
-          @include url; 
-          background-size: cover;
-          background-image: url("../img/interior_01.jpg");
-          h2 {font-size: 1.8rem; color:#fff;}
-          span {font-size:0.8rem; font-weight:bold; color:#fff;}
-          p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600; color:#fff;}
-          
-
-         .inside_text {position:absolute; bottom:0; margin:auto; width: 100%; height: 150px; 
-          ul {width: 100%; height: 100%;
-            li {position: relative; float:left; margin-left: 13%; width:230px; height: 120px;
-            strong {display: block; color:#fff; text-align: center;}
-            span {display: block; line-height:1.8; text-align: center; font-size:0.7rem;}
-            &:before {content:" "; display: block; position: absolute; top:0; bottom:0; left:-30%; margin:auto; width: 1px; height: 30px; background-color: #fff;}
-            &:first-child:before{width:0;}
-           } // li
-          } // ul
-         } // .inside_text
-        } // .fadein_interior
+           } // .slide_Img_List
+          } // .slide_Img
+         } // .slide_Main
+        } // .popupBox
        } // #interior
+
+/*        .interior.a.active {opacity:1;} */
 
        #spec_page {position: relative; width: 100%; height: 100%; margin-top:20rem; background-color: #ccc;
           span {font-size:0.8rem; display:block; margin-bottom:20px; height: 20px; width:100px; 
@@ -295,7 +270,7 @@ body {overflow-x: hidden; overflow-y:auto;}
  a.active dd{opacity:1;}
 
  .choice_video {position:absolute; width: 100%; height:100%; background-color: #ccc;
-@include url; background-size:cover; background-image:url("../../img/tesla_bgc_02.jpg");}
+@include url; background-size:cover; background-image:url("../img/video_img.jpg");}
  .model3 {position:absolute; @include margin; bottom:-50%; left:-50%; width: 300px; height: 160px; 
   @include url;
   background-size: cover;

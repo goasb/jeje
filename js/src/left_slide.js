@@ -1,9 +1,9 @@
 (function($){
-    const categori = $('.categori');
-    const CategoriLink = categori.find('a');
+    const  openMenuBtn = $('.menu');
+    const categoriLink = categori.find('a');
   
     // .action
-    CategoriLink.on('mouseenter focus', function(){
+    categoriLink.on('mouseenter focus', function(){
                 $(this).addClass('active');
               })
               .on('mouseleave blur', function(){
