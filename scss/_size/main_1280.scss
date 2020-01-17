@@ -68,8 +68,8 @@ body {overflow-x: hidden; overflow-y:auto;}
 
      /* ===================================== pop section ============================================ */
 
-     .categori {position:relative; z-index:100; top:-3%; width: 400px; height:auto; background-color:#fff; left:-400px;
-      transition:300ms ease;
+     .categori {position:relative; z-index:100; top:-3%; width: 400px; height:auto; background-color:#fff; 
+      left:-400px; transition:300ms ease;
       .Btn_height {width: 100%; height: 50px;
       .closeBtn {float:right; width:70px; height: 50px; font-size: 1.5rem; background-color:transparent; color:#222;}
     }
@@ -88,6 +88,12 @@ body {overflow-x: hidden; overflow-y:auto;}
 
 
     #modelS {position: relative; width: 100%; height: 100%; margin-top:20rem; 
+      .models_video {position:absolute; z-index:1; @include margin; width: 800px; height: 500px; background-color: #faf;
+       .models_closeBtn {position:absolute; margin:auto; right:0; width: 50px; height: 50px; 
+        background-color:transparent; font-size:1.3rem;}
+      } // .models_video
+
+      
       .Sinfo {position:relative; left:-15%; width: 100%; height: 100%; background-color: #fff;
        .sImg {position: absolute; width:500px; height:500px; @include margin; top:-20%; @include url; background-image: url("../img/modelS.png");}
         >span {position: absolute; @include margin; top:62%; display: block; text-align: center; font-weight:bold; color:#555; letter-spacing:10px;}
@@ -108,7 +114,7 @@ body {overflow-x: hidden; overflow-y:auto;}
               a {display: block; color:#222; }
                 } // span
 
-          .redBox {position: absolute; top:28%; width: 20px; height: 5px; background-color:$primary;}
+          .redBox {position: absolute; top:28%; width: 20px; height: 5px; background-color:#f10;}
           p {font-size:0.8rem; }
           dl {font-size:0.8rem; padding-top:220px; box-sizing: border-box;
            dt {font-size:1.8rem; font-weight:bold; margin-bottom:15px;}
@@ -126,7 +132,7 @@ body {overflow-x: hidden; overflow-y:auto;}
        } // #modelS
       
       
-       #interior {width: 100%; height: 100%; margin-top:20rem;
+       #interior {position:relative; width: 100%; height: 100%; margin-top:20rem;
         .interiorBox {position:relative; width: 100%; height: 100%;
           @include url; 
           background-size: cover;
@@ -134,8 +140,8 @@ body {overflow-x: hidden; overflow-y:auto;}
           span {font-size:0.8rem; font-weight:bold; color:#fff;}
           p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600; color:#fff;}
 
-         .clickBox {position:absolute; @include margin; width: 50px; height: 50px; border:1px solid #fff; border-radius:100px;
-          span {display: block; text-align:center; line-height:50px;}
+         .clickBox {position:absolute; z-index:1; @include margin; width: 50px; height: 50px; border:1px solid #fff; border-radius:100px;
+          span {display: block; width: 100%; height: 100%; text-align:center; line-height:50px;}
           a {display: block; width: 100%; height: 100%; color:#fff;}
         } // .clickBox
           
@@ -152,9 +158,9 @@ body {overflow-x: hidden; overflow-y:auto;}
         } // .interiorBox
 
 /* ===================================== popup section ============================================ */
-      .popupBox {display: block; position:fixed; top:0; z-index:100; display: none;
-                 width: 100%; height:100%; background-color:rgba(0,0,0,0.9); 
-      .closeBtn {position: absolute; z-index:10; right:4%; top:4%; width: 40px; height: 40px; 
+      .popupBox {position: absolute; top:0; transition:all 1000ms ease; opacity:0;
+                 width: 100%; height:100%; background-color:rgba(0,0,0,0.8); 
+      .closeBtn {position: absolute; z-index:10; right:4%; top:15%; width: 40px; height: 40px; 
         background-color: transparent; transition:all 300ms ease;
         i {display: block; width: 100%; height: 100%; font-size:2.5rem; text-align:center; line-height:40px;}
       } // closeBtn
@@ -217,7 +223,7 @@ body {overflow-x: hidden; overflow-y:auto;}
         } // .popupBox
        } // #interior
 
-/*        .interior.a.active {opacity:1;} */
+     #interior .active {z-index:1; opacity:1;}
 
        #spec_page {position: relative; width: 100%; height: 100%; margin-top:20rem; background-color: #ccc;
           span {font-size:0.8rem; display:block; margin-bottom:20px; height: 20px; width:100px; 
