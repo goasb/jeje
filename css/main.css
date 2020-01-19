@@ -50,8 +50,9 @@ body { overflow-x: hidden; overflow-y: auto; }
   #banner .categori ul li:nth-child(9) { margin-top: 40px; border-bottom: 0; border-top: 1px solid #222; }
   #banner .categori.active { transform: translateX(100%); transition: 300ms ease; }
   #modelS { position: relative; width: 100%; height: 100%; margin-top: 20rem; }
-  #modelS .models_video { position: absolute; z-index: 1; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 800px; height: 500px; background-color: #faf; }
-  #modelS .models_video .models_closeBtn { position: absolute; margin: auto; right: 0; width: 50px; height: 50px; background-color: transparent; font-size: 1.3rem; }
+  #modelS .models_video { position: absolute; z-index: 1; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 800px; height: 500px; background-color: #ccc; transition: all 1000ms ease; opacity: 0; }
+  #modelS .models_video .models_closeBtn { position: absolute; margin: auto; right: -3%; top: -4%; width: 50px; height: 50px; background-color: #222; border-radius: 100px; font-size: 1.3rem; transition: all 1000ms ease; }
+  #modelS .models_video.active { opacity: 1; }
   #modelS .Sinfo { position: relative; left: -15%; width: 100%; height: 100%; background-color: #fff; }
   #modelS .Sinfo .sImg { position: absolute; width: 500px; height: 500px; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -20%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/modelS.png"); }
   #modelS .Sinfo > span { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: 62%; display: block; text-align: center; font-weight: bold; color: #555; letter-spacing: 10px; }
@@ -149,6 +150,9 @@ body { overflow-x: hidden; overflow-y: auto; }
   #choiceBox .modelX { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; width: 300px; height: 160px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/model_x.jpg"); background-color: #2fa; }
   #choiceBox .roadster { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; left: 50%; width: 300px; height: 160px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/roadster_03.jpg"); background-color: #5aa; }
   #footBox { position: relative; width: 100%; height: 50%; }
+  #footBox .top_scroll { position: absolute; width: 50px; height: 50px; right: 3%; bottom: 20%; background-color: #555; }
+  #footBox .top_scroll .topButton { width: 100%; height: 100%; background-color: transparent; }
+  #footBox .top_scroll .topButton i { font-size: 2rem; color: #fff; }
   #footBox .nameBox { position: absolute; margin: auto; left: 15%; top: 10%; width: 100px; height: 20px; }
   #footBox .nameBox span { float: left; font-size: 0.9rem; font-weight: bold; color: #222; margin-right: 10px; }
   #footBox .nameBox p { font-size: 0.7rem; font-weight: bold; margin-top: 2px; color: #666; }

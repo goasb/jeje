@@ -14,8 +14,4 @@ closeMenuBtn.on('click',function(e){
     categori.removeClass('active');
 });
 
-/* const clickBtn = $('.clickBox');
-const interior = $('.popupBox');
-const closeBtn = $('.closeBtn') */
-
 })(jQuery);

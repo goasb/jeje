@@ -15,6 +15,23 @@
         e.preventDefault();
         popUp.removeClass('active');
     });
+
+// modelS Page ===============================
+
+    const orderBox = $('.orderBox');
+    const videoLink = orderBox.find('a');
     
-    console.log(active);
+    const Mvideo = $('.models_video');
+    const McloseBtn = Mvideo.find('.models_closeBtn');
+
+    videoLink.on('click',function(e){
+       e.preventDefault();
+       Mvideo.addClass('active'); 
+    });
+
+    McloseBtn.on('click',function(e){
+        e.preventDefault();
+        Mvideo.removeClass('active'); 
+     });
+
     })(jQuery);
