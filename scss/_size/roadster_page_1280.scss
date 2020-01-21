@@ -1,0 +1,296 @@
+head {overflow-x: hidden; overflow-y:auto;}
+body {overflow-x: hidden; overflow-y:auto;}
+
+@media screen and (min-width:1280px) and (max-width:1919px) {
+
+    #wrap {width: 100%; height: 100%;}
+    #headBox {position:fixed; z-index: 100; width:100%; height:70px; background-color:rgba(255,255,255,0.1); 
+    h1 {width: 70px; height: 70px; margin:auto; @include url; background-size:60%; background-image: url("../img/tesla.png");
+    a {display: block; width: 100%; height: 100%;}}
+    
+    .menu {position:absolute; top:28%; left:5%; width:30px; height: 30px; background-color:transparent;
+        i{line-height:30px; font-size: 1.2rem; width: 100%; height: 100%;}
+    } // menu
+    .search_area {position:absolute; top:0; bottom:0; right:5%; margin:auto; width: 230px; height: 30px; 
+     .search {position: absolute; @include margin; width:100%; height: 100%; border:1px solid #fff;  
+      #searchBar {float:left; width: 200px; height:30px; border:none; background-color:rgba(255,255,255,0.2); 
+        &::placeholder {color:$white; font-size: 0.7rem;}
+        } // #searchBar
+      .search_icon {width:30px; height: 30px; background-color:rgba(255,255,255,0.2); color:#fff;}
+      } // .search 
+     } // .search_area
+    } // #headBox
+    
+    #banner {width: 100%; height:100%; 
+    
+      .banner_video {position:relative; width: 100%; height:100%; margin:auto; background-color:#fff; 
+        span {display: block; position: absolute; z-index: 10; margin:auto; bottom:6%; left:10%; 
+            width: 500px; height:70px; font-size:1rem; line-height:40px; color:#fff;}
+
+        ul {position: absolute; z-index:10; margin:auto; right:10%; bottom:6%; width: 350px; height: 50px; 
+            em {position: absolute; margin:auto; width: 100%; height: 100%; text-align: center; line-height:50px; color:#fff;}
+         .reservation {position: absolute; width: 150px; height: 100%; border:1px solid #fff; border-radius:5px;}
+         .newsletter {position: absolute; margin:auto; right:0; width: 150px; height: 100%; border:1px solid #fff; border-radius:5px;}
+        } // ul
+
+        video {position: absolute; width: 100%; min-width:100%; height:auto; min-height:100%; left:50%; top:0; 
+            transform:translate(-50%,-8%); background-color: #222;
+        } // video
+      } // .banner_video 
+    
+     .banner_left {position: fixed; z-index:10; top:0; bottom:0; margin:auto; width: 120px; height:200px; 
+      .nameBox {position:relative; width:100%; height: 100px; 
+        .name {position:absolute; bottom:45%; right:0; transform: rotate(-90deg); text-align: center; font-size:1.2rem; 
+            width: 70px; height:30px; font-weight:bold; color:#fff; letter-spacing:10px;}
+    } // .name
+      .numberBox {width: 100%; height: 40px; 
+        &:before {content:" "; display: block; width: 100px; height: 1px; background-color:$primary;}
+        .number {position:absolute; bottom:0; top:30%; right:0; margin:auto; width: 70px; height: 20px; 
+          text-align: center; font-weight:bold; color:#fff;}
+        } // .numberBox
+     } // .banner_left
+     .banner_right {position: fixed; z-index:10; top:10%; bottom:0; right:3%; margin:auto; width: 100px; height:200px; 
+        ul{width:100%; height:100%;
+            li{width:100%; height:10%;
+      .line {position:relative; top:50%; float:right; width:60px; height: 1px; background-color:$primary; }
+        &:nth-child(2) {.line {width:30px; height:1px; background-color: #fff;} }
+        &:nth-child(3) {.line {width:30px; height:1px; background-color: #fff;} }
+        &:nth-child(4) {.line {width:30px; height:1px; background-color: #fff;} }
+        &:nth-child(5) {.line {width:30px; height:1px; background-color: #fff;} }
+        } // li
+      } // ul
+     } // .banner_right
+    
+    @keyframes mousewheel {
+        0% {height:0; top:0;}
+        100% {height:50px; top:50%;}
+    } // @keyframs
+    .scrollMouse {position: absolute; bottom:2%; left:0; right:0; margin:auto; width: 50px; height: 100px; 
+     .mouse {position: absolute; bottom:2%; left:0; right:55%; margin:auto; width: 10px; height: 100px;
+      .wheel {position: absolute; width: 1px; height: 50px; right:0; left:0; margin:auto; transform:translateX(-50%);
+              text-indent:-2000px; background-color:$white; animation:mousewheel 1s linear infinite;
+      } // .wheel
+     } // .mouse
+     p {position: absolute; bottom:60%; right:0; font-size:0.8rem; color:$white; transform: rotate(-90deg);}
+     } // .scrollMouse
+
+     /* ===================================== pop section ============================================ */
+
+     .categori {position:relative; z-index:100; top:-104%; width: 400px; height:auto; background-color:#fff; 
+      left:-400px; transition:300ms ease;
+      .Btn_height {width: 100%; height: 50px;
+      .closeBtn {float:right; width:70px; height: 50px; font-size: 1.5rem; background-color:transparent; color:#222;}
+    }
+      a {display: block; width: 100%; height: 100%;}
+      span {display: block; font-size:0.9rem; color:#222; font-weight:bold; margin-left:30px;}
+      
+      .menu_list {}
+      ul {width: 100%; height: 100%;
+       li {width: 100%; height: 70px; line-height:70px; border-bottom:1px solid #222;
+      &:nth-child(9) {margin-top:40px; border-bottom:0; border-top:1px solid #222;}
+      } // li
+     } // ul
+    } // .categori
+    
+    .categori.active {transform:translateX(100%); transition:300ms ease;}
+    }// #banner
+
+
+    #modelS {position: relative; width: 100%; height: 100%; margin-top:20rem; 
+      .models_video {position:absolute; z-index:1; @include margin; width: 1200px; height: 500px; background-color:transparent;
+        transition:all 1000ms ease; opacity:0;
+        video {position: absolute; width: 100%; min-width:100%; height:auto; min-height:100%; left:50%; top:0; transform:translate(-50%,-5%);
+            @include url;
+            background-size: cover;
+    } // video
+       .models_closeBtn {position:absolute; margin:auto; right:-1%; top:-4%; width: 50px; height: 50px; 
+        font-size:1.3rem; transition:all 1000ms ease; color:#222; background-color:transparent;}
+      } // .models_video
+      .models_video.active {opacity:1;}
+
+      
+      .Sinfo {position:relative; left:-15%; width: 100%; height: 100%; background-color: #fff;
+       .sImg {position: absolute; width:500px; height:500px; @include margin; top:-20%; 
+              @include url; background-image: url("../img/model_roadster.jpg");}
+        >span {position: absolute; @include margin; top:62%; display: block; text-align: center; font-weight:bold; color:#555; letter-spacing:10px;}
+       .spec {position: absolute; @include margin; bottom:-70%; width: 603px; height: 100px;
+        ul {width: 100%; height:auto;
+          strong {display:block; width:200px; height: 50px; font-weight:bold; text-align:center; font-style:normal; color:#333; font-size:1.1rem;}
+          span {display:block; width: 200px; height:50px;text-align:center; color:#333; font-size:0.8rem;}
+          li{position: relative;}
+          .zeroH {float:left; width: 200px; height: 100%;}
+          .liter {float:left; width: 200px; height: 100%;}
+          .street {float:left; width: 200px; height: 100%;}
+          li:before {content:" "; display: block; position:absolute; top:0; bottom:0; margin:auto; height:40px; width:1px; background-color:#333;}
+          li:first-child:before{width:0;}
+          } // ul
+         } // .spec
+         .Stext {position:relative; margin:auto; right:-40%; width: 400px; height: 100%;
+           span {display: block; width: 100%; height: 100%; text-align: center; line-height:30px; font-size:0.8rem;
+              a {display: block; color:#222; }
+                } // span
+
+          .redBox {position: absolute; top:28%; width: 20px; height: 5px; background-color:#f10;}
+          p {font-size:0.8rem; }
+          dl {font-size:0.8rem; padding-top:220px; box-sizing: border-box;
+           dt {font-size:1.8rem; font-weight:bold; margin-bottom:15px;}
+           dd {width: 280px; height:auto; font-size:0.8rem; line-height:20px;}
+          } // dl
+
+         .readMore {position: absolute; margin:auto; bottom:18%; width: 150px; height: 30px;
+          border:1px solid #222; border-radius:5px;}
+
+         .orderBox {position: absolute; margin:auto; bottom:12%; width: 150px; height: 30px;
+           border:1px solid #222; border-radius:5px;
+            } // .orderBox
+          } // .Stext
+        } // .Sinfo
+       } // #modelS
+      
+      
+       #interior {position:relative; width: 100%; height: 100%; margin-top:20rem;
+        .interiorBox {position:relative; width: 100%; height: 100%;
+          @include url; 
+          background-size: cover;
+          background-image: url("../img/roadster_interior.jpg");
+          span {font-size:0.8rem; font-weight:bold; color:#fff;}
+          p {font-size:0.8rem; margin-top:20px; line-height:22px; font-weight:600; color:#fff;}
+          
+         .inside_text {position:absolute; bottom:0; margin:auto; width: 100%; height: 150px; 
+          ul {width: 100%; height: 100%;
+            li {position: relative; float:left; margin-left: 11.5%; width:290px; height: 120px;
+            strong {display: block; color:#fff; text-align: center; font-size:1.2rem;}
+            span {display: block; line-height:1.8; text-align: center; font-size:0.9rem;}
+            &:before {content:" "; display: block; position: absolute; top:0; bottom:0; left:-30%; margin:auto; width: 1px; height: 30px; background-color: #fff;}
+            &:first-child:before{width:0;}
+           } // li
+          } // ul
+         } // .inside_text
+        } // .interiorBox
+       } // .interior
+
+       #spec_page {position: relative; width: 100%; height: 100%; margin-top:20rem; 
+          span {display:block; margin-bottom:20px; height: 20px; width:160px; 
+            text-align: right; font-weight:600; color:#fff; }
+          p {color:#fff;}
+          .spec_base {float:left; width:200px; height:100%; padding-top:10px; box-sizing:border-box; }
+          .spec_element {float:left; width:250px; height: 100%; padding-top:10px; box-sizing:border-box; line-height:1.3;}
+          a {display: block; width: 100%; height: 100%;}
+
+        .specImg {position:absolute; width: 100%; height: 100%; @include url; 
+          background-size:cover;
+          background-position:0 100%;
+          background-image:url("../img/roadster_spec.jpg");}
+        .Pbutton {position: absolute; z-index:1; left:14%; bottom:30%; width: 180px; height:40px; border-radius:5px; border:1px solid #fff;
+         span {display: block; width: 100%; height: 100%; line-height:40px; text-align: center; color:#fff; text-transform: uppercase;
+               letter-spacing:2px;}
+        } // .Pbutton
+        .Lbutton {position: absolute; z-index:1; left:14%; bottom:18%; width: 180px; height:40px; border-radius:5px; border:1px solid #fff;
+         span {display: block; width: 100%; height: 100%; line-height:40px; text-align: center; color:#fff; text-transform: uppercase;
+               letter-spacing:2px;}
+        } // .Lbutton
+        .spec_Atext {position:absolute; @include margin; bottom:-50%; width:100%; height:250px; 
+
+         .Abox {position: absolute; left:30.5%; width:500px; height:250px;
+        } // .Lbox
+         .A_2box {position: absolute; right:10%; width:500px; height:250px;}
+        } // .specImg
+      } // #spec_page
+
+#choiceBox {position:relative; width: 100%; height: 100%; margin-top:20rem;
+  ul {width: 100%; height: 100%;
+    li {overflow: hidden;
+      a {display: block; width: 100%; height: 100%;
+     dl {width: 100%; height:160px; background-color:rgba(0,0,0,0.7); 
+     transform: translateY(80%); transition:300ms ease; 
+       dt {width: 100%; height: 10px; text-align: center; line-height:30px;
+        font-size:0.7rem; color:#fff;
+        font-weight: 900;
+        transition:all 300ms ease;}
+       dd {width: 100%; height:100%; text-align: center; margin-top:30px;
+        font-size:0.7rem; color:#fff; line-height:18px;
+        opacity:0; transition:all 300ms ease;}
+      } // dl
+     } // a
+    } // li
+   } // ul
+ 
+ a.active dl{transform:translateY(0);}
+ a.active dt{color:#f30;}
+ a.active dd{opacity:1;}
+
+ .choice_video {position:absolute; width: 100%; height:100%; background-color: #ccc;
+@include url; background-size:cover; background-position-Y:100%; background-image:url("../img/roadster_choice_03.jpg");}
+ .model3 {position:absolute; @include margin; bottom:-50%; left:-50%; width: 300px; height: 160px; 
+  @include url;
+  background-size: cover;
+  background-image:url("../img/Model_3.jpg");
+
+
+} // model3
+ .modelX {position:absolute; @include margin; bottom:-50%; width: 300px; height: 160px; 
+  @include url;
+  background-size:cover;
+  background-image:url("../img/model_x.jpg");
+  background-color: #2fa;}
+
+ .roadster {position:absolute; @include margin; bottom:-50%; left:50%; width: 300px; height: 160px; 
+  @include url;
+  background-size:cover;
+  background-image:url("../img/roadster_03.jpg");
+  background-color: #5aa;}
+ } // #choiceBox
+
+ #footBox {position: relative; width: 100%; height: 50%;
+
+  .top_scroll {position: absolute; width:50px; height:50px;   
+               right:3%; bottom:20%; background-color: #555;
+   .topButton {width: 100%; height: 100%; background-color:transparent;
+    i {font-size:2rem; color:#fff;}
+   }
+  } // .top_scroll
+
+  .nameBox {position: absolute; margin:auto; left:15%; top:10%; width: 100px; height:20px; 
+  span {float:left; font-size:0.9rem; font-weight:bold; color:#222; margin-right:10px;}
+  p {font-size:0.7rem; font-weight:bold; margin-top:2px; color:#666; }
+ } // .nameBox
+
+ .company_img {position: absolute; left:14%; top:20%; width: 500px; height: 200px; 
+  @include url; background-image: url("../img/footimg.png");}
+
+ .logoBox {position: absolute; right:35%; top:20%; width:230px; height: 30px; 
+  ul {width: 100%; height: 100%;
+   li {float:left; width: 25px; height:25px; margin-right: 20px; 
+    &:nth-child(1) {@include url; background-image: url("../img/logo/pinterest.png");}
+    &:nth-child(2) {@include url; background-image: url("../img/logo/facebook.png");}
+    &:nth-child(3) {@include url; background-image: url("../img/logo/instargram.png");}
+    &:nth-child(4) {@include url; background-image: url("../img/logo/twitter.png"); background-size:cover;}
+    &:nth-child(5) {@include url; background-image: url("../img/logo/youtube.png");}
+    a {display: block; width: 100%; height: 100%;
+    } // a
+   } // li
+  } // ul
+ } // .logoBox
+
+ .addressBox {position: absolute; right:28%; top:32%; width: 350px; height: 155px; 
+  .Aname {float:left; font-size: 0.8rem; width: 29%; height: 100%; line-height:43px; color:#222;
+  p {text-align:center; letter-spacing:1px;
+  &:nth-child(2){text-align:right; letter-spacing:1.6rem;}
+  &:nth-child(4){text-align:center; letter-spacing:0.3rem;}}
+  } // Aname
+  .Bname {float:left; margin-left:10px; font-size: 0.8rem; width: 60%; height: 100%; line-height:43px; color:#777}
+
+} // .addressBox
+
+ .footmenu {position: absolute; bottom:5%; width: 100%; height: 20px; 
+  ul {position: absolute; margin:auto; left:0; right:-6%; width:1200px; height: 100%;
+   li {float:left; font-size:0.8rem; text-align: center; color:#333; width: 120px; height: 100%; margin-right: 35px;
+  span {display: block; width: 100%; height: 100%;}
+  a {display: block; width: 100%; height: 100%;}
+   } // li
+  } // ul
+ } // .footmenu
+} // #footBox
+      
+
+} // media screen

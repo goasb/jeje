@@ -9,6 +9,7 @@
     const win = $(windows);
 
   win.on('scroll',function(e){
+    e.preventDefault();
     let myscroll = $(this).scrollTop(myscroll > 150 );
   });
 
