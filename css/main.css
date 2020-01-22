@@ -225,7 +225,7 @@ body {
     #banner .categori {
       position: relative;
       z-index: 100;
-      top: -104%;
+      top: -103%;
       width: 400px;
       height: auto;
       background-color: #fff;
@@ -281,20 +281,32 @@ body {
       bottom: 0;
       width: 800px;
       height: 500px;
-      background-color: #ccc;
       transition: all 1000ms ease;
       opacity: 0; }
+      #modelS .models_video video {
+        position: absolute;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -5%);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-size: cover; }
       #modelS .models_video .models_closeBtn {
         position: absolute;
         margin: auto;
         right: -3%;
-        top: -4%;
-        width: 50px;
-        height: 50px;
-        background-color: #222;
-        border-radius: 100px;
-        font-size: 1.3rem;
-        transition: all 1000ms ease; }
+        top: -5%;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        font-size: 1.1rem;
+        transition: all 1000ms ease;
+        color: #222; }
     #modelS .models_video.active {
       opacity: 1; }
     #modelS .Sinfo {
@@ -871,7 +883,7 @@ body {
       background-position: 50% 50%;
       background-size: contain;
       background-size: cover;
-      background-image: url("../img/video_img.jpg"); }
+      background-image: url("../img/choice_img.jpg"); }
     #choiceBox .model3 {
       position: absolute;
       margin: auto;
