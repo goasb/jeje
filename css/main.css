@@ -4,20 +4,22 @@ head { overflow-x: hidden; overflow-y: auto; }
 
 body { overflow-x: hidden; overflow-y: auto; }
 
+#wrap { font-size: 0.8rem; }
+
 @media screen and (min-width: 1280px) and (max-width: 1919px) { #wrap { width: 100%; height: 100%; }
-  #headBox { position: fixed; z-index: 100; width: 100%; height: 70px; background-color: rgba(255, 255, 255, 0.1); }
-  #headBox h1 { width: 70px; height: 70px; margin: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 60%; background-image: url("../img/tesla.png"); }
+  #headBox { position: fixed; z-index: 100; width: 100%; height: 50px; background-color: rgba(255, 255, 255, 0.1); }
+  #headBox h1 { width: 70px; height: 50px; margin: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 43%; background-image: url("../img/tesla.png"); }
   #headBox h1 a { display: block; width: 100%; height: 100%; }
-  #headBox .menu { position: absolute; top: 28%; left: 5%; width: 30px; height: 30px; background-color: transparent; }
+  #headBox .menu { position: absolute; top: 20%; left: 6%; width: 30px; height: 30px; background-color: transparent; }
   #headBox .menu i { line-height: 30px; font-size: 1.2rem; width: 100%; height: 100%; }
   #headBox .categori { position: relative; z-index: 100; top: -104%; width: 400px; height: auto; background-color: #fff; left: -400px; transition: 300ms ease; }
   #headBox .categori .Btn_height { width: 100%; height: 50px; }
-  #headBox .categori .Btn_height .closeBtn { float: right; width: 70px; height: 50px; font-size: 1.5rem; background-color: transparent; color: #222; }
+  #headBox .categori .Btn_height .closeBtn { float: right; width: 70px; height: 50px; font-size: 1.2rem; background-color: transparent; color: #222; }
   #headBox .categori a { display: block; width: 100%; height: 100%; }
-  #headBox .categori span { display: block; font-size: 0.9rem; color: #222; font-weight: bold; margin-left: 30px; }
+  #headBox .categori span { display: block; font-size: 0.8rem; color: #222; font-weight: bold; margin-left: 30px; }
   #headBox .categori ul { width: 100%; height: 100%; }
-  #headBox .categori ul li { width: 100%; height: 70px; line-height: 70px; border-bottom: 1px solid #222; }
-  #headBox .categori ul li:nth-child(9) { margin-top: 40px; border-bottom: 0; border-top: 1px solid #222; }
+  #headBox .categori ul li { width: 100%; height: 54px; line-height: 54px; border-bottom: 1px solid #555; }
+  #headBox .categori ul li:nth-child(9) { margin-top: 40px; border-bottom: 0; border-top: 1px solid #555; }
   #headBox .categori.active { transform: translateX(100%); transition: 300ms ease; }
   #headBox .search_area { position: absolute; top: 0; bottom: 0; right: 5%; margin: auto; width: 230px; height: 30px; }
   #headBox .search_area .search { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #fff; }
@@ -54,10 +56,10 @@ body { overflow-x: hidden; overflow-y: auto; }
   #modelS .models_video video { position: absolute; width: 100%; min-width: 100%; height: auto; min-height: 100%; left: 50%; top: 0; transform: translate(-50%, -5%); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; }
   #modelS .models_video .models_closeBtn { position: absolute; margin: auto; right: -3%; top: -5%; width: 30px; height: 30px; background-color: transparent; font-size: 1.1rem; transition: all 1000ms ease; color: #222; }
   #modelS .models_video.active { opacity: 1; }
-  #modelS .Sinfo { position: relative; left: -15%; width: 100%; height: 100%; background-color: #fff; }
-  #modelS .Sinfo .sImg { position: absolute; width: 500px; height: 500px; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -20%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/modelS.png"); }
+  #modelS .Sinfo { position: relative; left: -18%; width: 100%; height: 100%; background-color: #fff; }
+  #modelS .Sinfo .sImg { position: absolute; width: 350px; height: 350px; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -20%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/modelS.png"); }
   #modelS .Sinfo > span { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: 62%; display: block; text-align: center; font-weight: bold; color: #555; letter-spacing: 10px; }
-  #modelS .Sinfo .spec { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -70%; width: 603px; height: 100px; }
+  #modelS .Sinfo .spec { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -70%; width: 600px; height: 100px; }
   #modelS .Sinfo .spec ul { width: 100%; height: auto; }
   #modelS .Sinfo .spec ul strong { display: block; width: 200px; height: 50px; font-weight: bold; text-align: center; font-style: normal; color: #333; font-size: 1.1rem; }
   #modelS .Sinfo .spec ul span { display: block; width: 200px; height: 50px; text-align: center; color: #333; font-size: 0.8rem; }
@@ -67,70 +69,75 @@ body { overflow-x: hidden; overflow-y: auto; }
   #modelS .Sinfo .spec ul .street { float: left; width: 200px; height: 100%; }
   #modelS .Sinfo .spec ul li:before { content: " "; display: block; position: absolute; top: 0; bottom: 0; margin: auto; height: 40px; width: 1px; background-color: #333; }
   #modelS .Sinfo .spec ul li:first-child:before { width: 0; }
-  #modelS .Sinfo .Stext { position: relative; margin: auto; right: -40%; width: 400px; height: 100%; }
-  #modelS .Sinfo .Stext span { display: block; width: 100%; height: 100%; text-align: center; line-height: 30px; font-size: 0.8rem; }
-  #modelS .Sinfo .Stext span a { display: block; color: #222; }
+  #modelS .Sinfo .Stext { position: relative; margin: auto; right: -43%; width: 400px; height: 100%; }
+  #modelS .Sinfo .Stext span { display: block; width: 100%; height: 100%; text-align: center; line-height: 30px; }
+  #modelS .Sinfo .Stext span a { display: block; font-size: 0.7rem; color: #222; }
   #modelS .Sinfo .Stext .redBox { position: absolute; top: 28%; width: 20px; height: 5px; background-color: #f10; }
-  #modelS .Sinfo .Stext p { font-size: 0.8rem; }
-  #modelS .Sinfo .Stext dl { font-size: 0.8rem; padding-top: 220px; box-sizing: border-box; }
+  #modelS .Sinfo .Stext dl { padding-top: 180px; box-sizing: border-box; }
   #modelS .Sinfo .Stext dl dt { font-size: 1.8rem; font-weight: bold; margin-bottom: 15px; }
   #modelS .Sinfo .Stext dl dd { width: 280px; height: auto; font-size: 0.8rem; line-height: 20px; }
-  #modelS .Sinfo .Stext .readMore { position: absolute; margin: auto; bottom: 18%; width: 150px; height: 30px; border: 1px solid #222; border-radius: 5px; }
-  #modelS .Sinfo .Stext .orderBox { position: absolute; margin: auto; bottom: 12%; width: 150px; height: 30px; border: 1px solid #222; border-radius: 5px; }
+  #modelS .Sinfo .Stext .readMore { position: absolute; margin: auto; bottom: 19%; width: 150px; height: 30px; border: 1px solid #888; border-radius: 5px; }
+  #modelS .Sinfo .Stext .orderBox { position: absolute; margin: auto; bottom: 12%; width: 150px; height: 30px; border: 1px solid #888; border-radius: 5px; }
   #interior { position: relative; width: 100%; height: 100%; margin-top: 20rem; /* ===================================== popup section ============================================ */ }
   #interior .interiorBox { position: relative; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_main.jpg"); }
   #interior .interiorBox span { font-size: 0.8rem; font-weight: bold; color: #fff; }
   #interior .interiorBox p { font-size: 0.8rem; margin-top: 20px; line-height: 22px; font-weight: 600; color: #fff; }
-  #interior .interiorBox .clickBox { position: absolute; z-index: 1; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 50px; height: 50px; border: 1px solid #fff; border-radius: 100px; }
-  #interior .interiorBox .clickBox span { display: block; width: 100%; height: 100%; text-align: center; line-height: 50px; }
+  #interior .interiorBox .clickBox { position: absolute; z-index: 1; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 40px; height: 40px; border: 1px solid #fff; border-radius: 100px; }
+  #interior .interiorBox .clickBox span { display: block; font-size: 0.7rem; width: 100%; height: 100%; text-align: center; line-height: 40px; }
   #interior .interiorBox .clickBox a { display: block; width: 100%; height: 100%; color: #fff; }
+  #interior .interiorBox .clickBox *[data-animation="ripple"] { cursor: pointer; }
+  #interior .interiorBox .clickBox *[data-animation="ripple"]:focus { outline: none; }
+  #interior .interiorBox .clickBox *[data-animation="ripple"]::selection { background: transparent; pointer-events: none; }
   #interior .interiorBox .inside_text { position: absolute; bottom: 0; margin: auto; width: 100%; height: 150px; }
   #interior .interiorBox .inside_text ul { width: 100%; height: 100%; }
-  #interior .interiorBox .inside_text ul li { position: relative; float: left; margin-left: 11.5%; width: 290px; height: 120px; }
-  #interior .interiorBox .inside_text ul li strong { display: block; color: #fff; text-align: center; font-size: 1.2rem; }
-  #interior .interiorBox .inside_text ul li span { display: block; line-height: 1.8; text-align: center; font-size: 0.9rem; }
+  #interior .interiorBox .inside_text ul li { position: relative; float: left; margin-left: 9.5%; width: 260px; height: 120px; }
+  #interior .interiorBox .inside_text ul li strong { display: block; color: #fff; text-align: center; font-size: 1rem; }
+  #interior .interiorBox .inside_text ul li span { display: block; line-height: 1.8; text-align: center; }
   #interior .interiorBox .inside_text ul li:before { content: " "; display: block; position: absolute; top: 0; bottom: 0; left: -30%; margin: auto; width: 1px; height: 30px; background-color: #fff; }
   #interior .interiorBox .inside_text ul li:first-child:before { width: 0; }
-  #interior .popupBox { position: absolute; top: 0; transition: all 1000ms ease; opacity: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); }
-  #interior .popupBox .closeBtn { position: absolute; z-index: 10; right: 4%; top: 15%; width: 40px; height: 40px; background-color: transparent; transition: all 300ms ease; }
-  #interior .popupBox .closeBtn i { display: block; width: 100%; height: 100%; font-size: 2.5rem; text-align: center; line-height: 40px; }
+  #interior .popupBox { position: absolute; top: 0; transition: all 1000ms ease; opacity: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); }
+  #interior .popupBox .closeBtn { position: absolute; z-index: 10; right: 4%; top: 15%; width: 25px; height: 25px; background-color: transparent; transition: all 300ms ease; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/white_x.png"); }
   #interior .popupBox .closeBtn:hover, #interior .popupBox .closeBtn:focus { outline: 0; transform: scale(1.1); }
   #interior .popupBox .slide_Main { width: 100%; height: 100%; }
-  #interior .popupBox .slide_Main .slideBtn { position: absolute; z-index: 10; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 100%; height: 0; background-color: #faf; }
-  #interior .popupBox .slide_Main .slideBtn button { width: 100px; height: 50px; background-color: transparent; transform: translateY(-90%); transition: all 300ms ease; }
-  #interior .popupBox .slide_Main .slideBtn button i { display: block; width: 100%; height: 100%; font-size: 4rem; line-height: 50px; color: #fff; }
+  #interior .popupBox .slide_Main .slideBtn { position: absolute; z-index: 10; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 100%; height: 100px; }
+  #interior .popupBox .slide_Main .slideBtn button { width: 50px; height: 50px; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/white_arrow.png"); }
   #interior .popupBox .slide_Main .slideBtn button.next { margin-right: 200px; float: right; }
-  #interior .popupBox .slide_Main .slideBtn button.prev { margin-left: 200px; float: left; }
-  #interior .popupBox .slide_Main .slideBtn button.prev:hover { transform: translate(-40px, -90%); }
-  #interior .popupBox .slide_Main .slideBtn button:hover, #interior .popupBox .slide_Main .slideBtn button:focus { background-color: transparent; outline: 0; transform: translate(40px, -90%); }
-  #interior .popupBox .slide_Main .indicator { position: absolute; z-index: 10; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -70%; right: -47%; width: 120px; height: 15px; }
+  #interior .popupBox .slide_Main .slideBtn button.prev { margin-left: 200px; float: left; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/white_arrow.png"); transform: rotateY(180deg); }
+  #interior .popupBox .slide_Main .slideBtn button:hover, #interior .popupBox .slide_Main .slideBtn button:focus { background-color: transparent; }
+  #interior .popupBox .slide_Main .indicator { position: absolute; z-index: 10; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -70%; left: 57%; width: 120px; height: 15px; }
   #interior .popupBox .slide_Main .indicator ul { width: 100%; height: 100%; }
   #interior .popupBox .slide_Main .indicator ul li { float: left; margin-left: 20px; width: 8px; height: 8px; border: 1px solid #fff; border-radius: 10px; }
   #interior .popupBox .slide_Main .indicator ul li:nth-child(1) { margin-left: 0; }
   #interior .popupBox .slide_Main .indicator ul li a { display: block; width: 100%; height: 100%; }
   #interior .popupBox .slide_Main .slide_Img { width: 100%; height: 100%; }
-  #interior .popupBox .slide_Main .slide_Img dl { position: absolute; bottom: -13%; width: 700px; height: 30px; }
+  #interior .popupBox .slide_Main .slide_Img dl { position: absolute; bottom: -15%; width: 550px; height: 30px; }
   #interior .popupBox .slide_Main .slide_Img dl dd { font-size: 0.8rem; font-weight: 600; line-height: 40px; color: #fff; }
   #interior .popupBox .slide_Main .slide_Img .slide_Img_List { position: relative; width: 300%; height: 100%; left: -100%; }
   #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_01_imgBox { width: 100%; height: 100%; }
-  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_01_imgBox .interior_01_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 70%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_01.jpg"); }
+  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_01_imgBox .interior_01_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -5%; width: 650px; height: 60%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_01.jpg"); }
   #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_02_imgBox { width: 100%; height: 100%; }
-  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_02_imgBox .interior_02_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 70%; display: none; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_02.jpg"); }
+  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_02_imgBox .interior_02_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -5%; width: 650px; height: 60%; display: none; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_02.jpg"); }
   #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_03_imgBox { width: 100%; height: 100%; }
-  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_03_imgBox .interior_03_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 70%; display: none; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_03.jpg"); }
+  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_03_imgBox .interior_03_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -5%; width: 650px; height: 60%; display: none; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_03.jpg"); }
   #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_04_imgBox { width: 100%; height: 100%; }
-  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_04_imgBox .interior_04_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -15%; width: 800px; height: 70%; display: none; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_04.jpg"); }
+  #interior .popupBox .slide_Main .slide_Img .slide_Img_List .interior_04_imgBox .interior_04_img { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -5%; width: 650px; height: 70%; display: none; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/interior_04.jpg"); }
   #interior .popupBox .slide_Main .slide_Img .slide_Img_List .slide { float: left; width: 33.33333%; height: 100%; }
   #interior .active { z-index: 1; opacity: 1; }
   #spec_page { position: relative; width: 100%; height: 100%; margin-top: 20rem; }
-  #spec_page span { display: block; margin-bottom: 20px; height: 20px; width: 160px; text-align: right; font-weight: 600; color: #fff; }
-  #spec_page p { color: #fff; }
-  #spec_page .spec_base { float: left; width: 200px; height: 100%; padding-top: 10px; box-sizing: border-box; }
-  #spec_page .spec_element { float: left; width: 260px; height: 100%; padding-top: 10px; box-sizing: border-box; line-height: 1.3; }
+  #spec_page span { display: block; height: 40px; width: 160px; text-align: right; font-weight: 600; color: #fff; }
+  #spec_page p { color: #fff; line-height: 23px; }
+  #spec_page .spec_base { float: left; width: 200px; height: 100%; padding-top: 5px; box-sizing: border-box; }
+  #spec_page .spec_element { float: left; width: 260px; height: 100%; }
   #spec_page a { display: block; width: 100%; height: 100%; }
   #spec_page .specImg { position: absolute; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 0 100%; background-image: url("../img/spec_img_03.jpg"); }
-  #spec_page .Pbutton { position: absolute; z-index: 1; left: 14%; bottom: 30%; width: 180px; height: 40px; border-radius: 5px; border: 1px solid #fff; }
+  #spec_page .Pbutton { position: absolute; z-index: 1; left: 21%; bottom: 25%; width: 180px; height: 43px; border: 1px solid #fff; border-radius: 5px; transform: translate(-50%, -50%); }
   #spec_page .Pbutton span { display: block; width: 100%; height: 100%; line-height: 40px; text-align: center; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
+  @keyframes sheen { 0% { transform: skewY(-45deg) translateX(0); }
+    100% { transform: skewY(-45deg) translateX(12.5em); } }
+  #spec_page .fx { position: relative; text-align: center; transition: all 0.2s ease-in-out; overflow: hidden; }
+  #spec_page .fx:before { position: absolute; content: " "; display: block; background-color: rgba(255, 255, 255, 0.5); width: 30px; height: 100%; top: 0; left: -4.5em; transform: skewX(-45deg) translateX(0); transition: none; }
+  #spec_page .fx:hover { background-color: #970a0a; color: #fff; border-radius: 5px; }
+  #spec_page .fx:hover:before { transform: skewX(-45deg) translateX(13.5em); transition: all 0.5s ease-in-out; }
   #spec_page .Lbutton { position: absolute; z-index: 1; left: 14%; bottom: 18%; width: 180px; height: 40px; border-radius: 5px; border: 1px solid #fff; }
   #spec_page .Lbutton span { display: block; width: 100%; height: 100%; line-height: 40px; text-align: center; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
   #spec_page .spec_Atext { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; width: 100%; height: 250px; }
@@ -150,15 +157,15 @@ body { overflow-x: hidden; overflow-y: auto; }
   #choiceBox .model3 { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; left: -50%; width: 300px; height: 160px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/Model_3.jpg"); }
   #choiceBox .modelX { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; width: 300px; height: 160px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/model_x.jpg"); background-color: #2fa; }
   #choiceBox .roadster { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; bottom: -50%; left: 50%; width: 300px; height: 160px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/roadster_03.jpg"); background-color: #5aa; }
-  #footBox { position: relative; width: 100%; height: 50%; }
-  #footBox .top_scroll { position: absolute; width: 50px; height: 50px; right: 3%; bottom: 20%; background-color: #555; }
+  #footBox { position: relative; width: 100%; height: 70%; }
+  #footBox .top_scroll { position: absolute; width: 40px; height: 40px; right: 3%; bottom: 20%; background-color: #555; }
   #footBox .top_scroll .topButton { width: 100%; height: 100%; background-color: transparent; }
-  #footBox .top_scroll .topButton i { font-size: 2rem; color: #fff; }
-  #footBox .nameBox { position: absolute; margin: auto; left: 15%; top: 10%; width: 100px; height: 20px; }
+  #footBox .top_scroll .topButton i { font-size: 1.3rem; color: #fff; }
+  #footBox .nameBox { position: absolute; margin: auto; left: 13%; top: 10%; width: 100px; height: 20px; }
   #footBox .nameBox span { float: left; font-size: 0.9rem; font-weight: bold; color: #222; margin-right: 10px; }
   #footBox .nameBox p { font-size: 0.7rem; font-weight: bold; margin-top: 2px; color: #666; }
-  #footBox .company_img { position: absolute; left: 14%; top: 20%; width: 500px; height: 200px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/footimg.png"); }
-  #footBox .logoBox { position: absolute; right: 35%; top: 20%; width: 230px; height: 30px; }
+  #footBox .company_img { position: absolute; left: 11.7%; top: 20%; width: 500px; height: 200px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/footimg.png"); }
+  #footBox .logoBox { position: absolute; right: 25%; top: 20%; width: 230px; height: 30px; }
   #footBox .logoBox ul { width: 100%; height: 100%; }
   #footBox .logoBox ul li { float: left; width: 25px; height: 25px; margin-right: 20px; }
   #footBox .logoBox ul li:nth-child(1) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo/pinterest.png"); }
@@ -167,15 +174,15 @@ body { overflow-x: hidden; overflow-y: auto; }
   #footBox .logoBox ul li:nth-child(4) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo/twitter.png"); background-size: cover; }
   #footBox .logoBox ul li:nth-child(5) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo/youtube.png"); }
   #footBox .logoBox ul li a { display: block; width: 100%; height: 100%; }
-  #footBox .addressBox { position: absolute; right: 28%; top: 32%; width: 350px; height: 155px; }
-  #footBox .addressBox .Aname { float: left; font-size: 0.8rem; width: 29%; height: 100%; line-height: 43px; color: #222; }
+  #footBox .addressBox { position: absolute; right: 17.5%; top: 32%; width: 350px; height: 155px; }
+  #footBox .addressBox .Aname { float: left; font-size: 0.8rem; width: 29%; height: 100%; line-height: 42px; color: #222; }
   #footBox .addressBox .Aname p { text-align: center; letter-spacing: 1px; }
   #footBox .addressBox .Aname p:nth-child(2) { text-align: right; letter-spacing: 1.6rem; }
   #footBox .addressBox .Aname p:nth-child(4) { text-align: center; letter-spacing: 0.3rem; }
-  #footBox .addressBox .Bname { float: left; margin-left: 10px; font-size: 0.8rem; width: 60%; height: 100%; line-height: 43px; color: #777; }
+  #footBox .addressBox .Bname { float: left; margin-left: 10px; font-size: 0.8rem; width: 60%; height: 100%; line-height: 42px; color: #777; }
   #footBox .footmenu { position: absolute; bottom: 5%; width: 100%; height: 20px; }
-  #footBox .footmenu ul { position: absolute; margin: auto; left: 0; right: -6%; width: 1200px; height: 100%; }
-  #footBox .footmenu ul li { float: left; font-size: 0.8rem; text-align: center; color: #333; width: 120px; height: 100%; margin-right: 35px; }
+  #footBox .footmenu ul { position: absolute; margin: auto; left: 0; right: -17.5%; width: 1200px; height: 100%; }
+  #footBox .footmenu ul li { float: left; font-size: 0.8rem; text-align: center; color: #333; width: 120px; height: 100%; margin-right: 15px; }
   #footBox .footmenu ul li span { display: block; width: 100%; height: 100%; }
   #footBox .footmenu ul li a { display: block; width: 100%; height: 100%; } }
 
@@ -187,9 +194,9 @@ body { overflow-X: hidden; overflow-Y: auto; }
   #headBox h1 a { display: block; width: 100%; height: 100%; }
   #headBox .menu { position: absolute; top: 0; left: 3.5%; width: 70px; height: 70px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 30%; background-image: url("../img/menu.png"); }
   #headBox .menu a { display: block; width: 100%; height: 100%; }
-  #headBox .search_area { position: absolute; top: 0; bottom: 0; right: 5%; margin: auto; width: 230px; height: 30px; }
+  #headBox .search_area { position: absolute; top: 0; bottom: 0; right: 5%; margin: auto; width: 230px; height: 20px; }
   #headBox .search_area .search { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #fff; }
-  #headBox .search_area .search #searchBar { float: left; width: 200px; height: 30px; border: none; background-color: rgba(255, 255, 255, 0.2); }
+  #headBox .search_area .search #searchBar { float: left; width: 200px; height: 20px; border: none; background-color: rgba(255, 255, 255, 0.2); }
   #headBox .search_area .search #searchBar::placeholder { color: #fff; }
   #headBox .search_area .search .search_icon { float: right; width: 30px; height: 30px; background-color: transparent; color: #fff; }
   #banner { width: 100%; height: 100%; background-color: #555; }
